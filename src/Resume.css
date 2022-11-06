@@ -1,0 +1,96 @@
+body {
+    background-color: white;
+    color: #212427;
+    font-family: 'Lato', sans-serif;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+/* i {
+    vertical-align: middle;
+} */
+.firstRow {
+    background-color: #f3f3f3;
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600
+}
+h4,p,li {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+li, h4 {
+    margin-bottom: .75rem;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 0;
+}
+
+a {
+    color: #212427;
+    text-decoration: none;
+}
+
+.roundedCorners {
+    border-radius: .5rem;
+}
+
+i::before {
+    content:normal;
+}
+
+.headshot {
+    width: 100%;
+    min-width: 250px;
+    max-width:475px
+}
+
+.subTitle {
+    margin-bottom: .5rem;
+}
+/* .name {
+    font-size: 3.8vw;
+} */
+
+#title {
+    font-weight: 400;
+}
+
+.skills {
+    line-height: 2em;
+}
+
+.about, .experience {
+    line-height: 2em;
+    min-width: 285px;
+}
+
+.date {
+    text-align: right;
+}
+
+.personal {
+    line-height: .75em;
+}
+
+.socialLink {
+    box-sizing:border-box;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+

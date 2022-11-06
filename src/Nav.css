@@ -1,0 +1,12 @@
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item a {
+    padding: 1rem 3rem;
+}
+.navbar-nav {
+    width:100%
+}
