@@ -32,7 +32,7 @@ const Resume = () => {
                     </div>
                     <div className="link col-12 mb-4">
                         <h4>
-                            <a href="http://www.andrewmichaelgay.com">
+                            <a href="https://www.andrewmichaelgay.com">
                                 <Laptop className='text-primary me-1' />
                                 <i className="text-primary bi bi-laptop me-1"></i>
                                 andrewmichaelgay.com
