@@ -3,7 +3,7 @@ import Resume from './Resume';
 import Portfolio from './Portfolio';
 import Nav from './Nav';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import UseRedirectToHttps from '../hooks/useRedirectToHttps';
+import UseRedirectToHttps from './hooks/useRedirectToHttps';
 
 
 function App() {
