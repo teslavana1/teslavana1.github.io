@@ -33,7 +33,7 @@ class Nav extends Component {
                             </li>
                             </ul>
                             <div className="d-flex ms-auto me-lg-1 px-0 nav-item download mb-0">
-                                <a href='https://drive.google.com/uc?export=download&id=1c5h5l5OCQQFk5nGes1T1lF33prVWRiZC'
+                                <a href='https://drive.google.com/uc?export=download&id=1SAl3IETWPAUNfNY_v_2slQu_A56g1EF5'
                                     className="btn btn-outline-light ms-lg-auto mt-2 mt-lg-0">
                                     <b>Resume</b>
                                     <Download className="bi bi-download ms-2" />
