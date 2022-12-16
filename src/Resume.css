@@ -55,8 +55,10 @@ i::before {
 
 .headshot {
     width: 100%;
-    min-width: 250px;
-    max-width:475px
+    /* min-width: 250px;
+    max-width:475px */
+    height: 320px;
+    object-fit: cover;
 }
 
 .subTitle {
