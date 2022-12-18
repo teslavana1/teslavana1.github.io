@@ -2,8 +2,8 @@ const websites = [
     {
         name: 'Tesla Mart V2',
         url: 'https://teslamartv2.herokuapp.com',
-        image: 'https://res.cloudinary.com/deuft4auk/image/upload/v1668972561/Tesla/Screenshot_2022-11-19_at_10.54.18_PM_ps8stc.png',
-        description: "After completing my React bootcamp, I rebuilt Tesla Mart from scratch to solidify my new skills. I found it much easier to create a polished, stable website using React and MUI. The use of state made storing data from API REST requests using Axios a breeze, and breaking the website down into components made the code easier to follow and organize. New functionality includes: profile pictures, reordering of the listing images, messaging between users, and more! I would still like to add more features, but I am very happy with the progress so far."
+        image: 'https://res.cloudinary.com/deuft4auk/image/upload/v1671405453/Personal%20Website/cray_arrange_s8krcq.png',
+        description: "After completing my React bootcamp, I rebuilt Tesla Mart from scratch to solidify my new skills. I found it much easier to create a polished, responsive website using MUI. Storing data from API REST requests in the state was a breeze, and breaking the website down into components made the code easier to follow and organize. New features includes: profile pictures, reordering of the listing images, messaging between users, and more! I'd still like to add more functionality, but I am very happy with the progress so far."
     },
     {
         name: 'Tesla Mart',
