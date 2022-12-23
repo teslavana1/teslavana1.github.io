@@ -2,7 +2,13 @@
     max-height: 100%;
     border-bottom: 1px solid rgba(0,0,0,.2);
     opacity: 1;
+    transition: all .3s ease-in-out;
 }
+
+.PortfolioItem-image img:hover {
+    opacity: .8;
+}
+
 .PortfolioItem-link {
     opacity: 1;
 
@@ -24,7 +30,7 @@
     opacity: 0;
     z-index: 10;
 }
-.PortfolioItem-link:hover {
+/* .PortfolioItem-link:hover {
     opacity: .8;
     transition: all 1s ease-in-out;
 
@@ -32,7 +38,7 @@
 .PortfolioItem:hover .PortfolioItem-body p {
     color: #212427;
     ;
-}
+} */
 
 .PortfolioItem a:link
 {
@@ -40,17 +46,17 @@ text-decoration:none;
 color: #212427;
 transition: all .3s ease-in-out;
 }
-a:visited
+/* a:visited
 {
 text-decoration:none;
 color: #212427;
-}
-a:hover
+} */
+/* a:hover
 {
 text-decoration:none;
 color: #212427;
 opacity: 0.6;
-}
+} */
 a:active
 {
 text-decoration:none;

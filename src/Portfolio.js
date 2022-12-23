@@ -1,30 +1,21 @@
-import React, { Component } from 'react'
-import PortfolioItem from './PortfolioItem'
+import React, { useState } from 'react'
+import PortfolioItem from './PortfolioItemMui'
 import websites from './PortfolioSeeds'
 import { v4 as uuid } from 'uuid'
 import './Portfolio.css'
 
-class Portfolio extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            loading: false,
-            selected: ''
-        }
-        this.isLoading = this.isLoading.bind(this)
-    }
-    isLoading(e) {
-        console.log(e)
-        this.setState({ loading: true })
-    }
-    render() {
-        let main = websites.map(w => (
-            <PortfolioItem key={uuid()} name={w.name} url={w.url} image={w.image} description={w.description} handleClick={this.isLoading} isLoading={this.state.loading} />
+export default function Portfolio () {
+    const [loading, setLoading] = useState(false)
+
+    console.log(loading)
+
+        const main = websites.map(app => (
+            <PortfolioItem key={uuid()} {...app} setLoading={setLoading} />
         ))
-        console.log(this.state.loading)
+
         return (
             <div>
-                <div className={'overlay ' + (this.state.loading ? 'd-flex' : 'd-none')}>
+                <div className={'overlay ' + (loading ? 'd-flex' : 'd-none')}>
                     <div className='container-fluid'>
                         <div className='row justify-content-center'>
                             <div className='col-8 col-sm-auto bg-white rounded text-center p-3'>
@@ -46,6 +37,3 @@ class Portfolio extends Component {
             </div>
         )
     }
-}
-
-export default Portfolio
