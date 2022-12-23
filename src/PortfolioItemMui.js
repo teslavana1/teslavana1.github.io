@@ -13,7 +13,7 @@ export default function PortfolioItem({ name, url, detailsUrl, image, descriptio
                     <Button onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} sx={{ height: '100%', width: '100%', p: 0, borderRadius: 0, opacity: hover ? .8 : 1.0, transition: '.3s ease-in-out' }} href={url} onClick={() => setLoading(true)}
                     // startIcon={<img className='img-fluid' style={{ objectFit: 'cover', height: { xl: '360px' } }} alt='' src={image} />}
                     >
-                        <img className='img-fluid' style={{ objectFit: 'cover', height: { xl: '360px' } }} alt='' src={image} />
+                        <img className='img-fluid' style={{ objectFit: 'cover', height: { xl: '360px' } }} alt='' src={image && image} />
                     </Button>
                 </Grid>
                 <Grid container item xs={12} lg={6} height='100%' p={3}>
