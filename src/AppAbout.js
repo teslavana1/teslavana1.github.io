@@ -20,7 +20,9 @@ export default function AppAbout() {
     // }, [])
 
     return (
-        <Grid container maxHeight={{ md: 'calc(100vh - 56px)' }} overflow='scroll' ref={container}>
+        <Grid container maxHeight={{ md: 'calc(100vh - 56px)' }} overflow='scroll'
+        //  ref={container}
+         >
             {/* <Grid key={seeds[0].heading} container item direction='row' height={{ md: '100%' }} position='relative' justifyContent='flex-start' bgcolor={`${bgColors[0]}`}>
                 <AppAboutImage imageUrl={seeds[0].imageUrl} side='25%' />
                 <AppAboutText heading={seeds[0].heading} text={seeds[0].text} />
