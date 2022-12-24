@@ -1,5 +1,6 @@
 import React from 'react'
 import './Resume.css'
+import cover from './canyon.jpg'
 import Skills from './SkillsMui';
 import Experience from './ExperienceMui';
 import Education from './EducationMui';
@@ -13,7 +14,7 @@ export default function Resume() {
             <Grid container item direction='row' alignItems='flex-start' justifyContent='space-between' p={2} className="firstRow">
                 <Grid container item direction='column' xs={12} lg={4} order={1} py={2} px={{ xs: 2, md: 4, xl: 5 }} alignItems='flex-start' className="about">
                     <Grid container item width='100%'>
-                        <img src="https://res.cloudinary.com/deuft4auk/image/upload/v1665117910/Personal%20Website/canyon_ibikw8.jpg"
+                        <img src={cover}
                             className='headshot roundedCorners mb-3' alt="" />
                     </Grid>
                     <Typography sx={{fontSize: '2.75rem', fontWeight: 700}} marginBottom='auto' className="name">Andrew Gay</Typography>
