@@ -9,7 +9,7 @@ import Footer from './Footer';
 
 
 function App() {
-  UseRedirectToHttps()
+  // UseRedirectToHttps()
   return (
     <div className="App">
       <Nav />
