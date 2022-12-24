@@ -2,26 +2,26 @@ import { Grid } from '@mui/material'
 import React, { useEffect, useRef } from 'react'
 import AppAboutImage from './AppAboutImage'
 import AppAboutText from './AppAboutText'
-// import createScrollSnap from 'scroll-snap'
+import createScrollSnap from 'scroll-snap'
 import seeds from './AboutTeslaMartV2Seeds'
 
 export default function AppAbout() {
-    // const container = useRef(null);
+    const container = useRef(null);
 
-    // const bindScrollSnap = () => {
-    //     const element = container.current
-    //     createScrollSnap(element, {
-    //         snapDestinationY: '100%',
-    //     }, () => console.log('snapped'))
-    // }
+    const bindScrollSnap = () => {
+        const element = container.current
+        createScrollSnap(element, {
+            snapDestinationY: '100%',
+        }, () => console.log('snapped'))
+    }
 
-    // useEffect(() => {
-    //     bindScrollSnap()
-    // }, [])
+    useEffect(() => {
+        bindScrollSnap()
+    }, [])
 
     return (
         <Grid container maxHeight={{ md: 'calc(100vh - 56px)' }} overflow='scroll'
-        //  ref={container}
+         ref={container}
          >
             {/* <Grid key={seeds[0].heading} container item direction='row' height={{ md: '100%' }} position='relative' justifyContent='flex-start' bgcolor={`${bgColors[0]}`}>
                 <AppAboutImage imageUrl={seeds[0].imageUrl} side='25%' />

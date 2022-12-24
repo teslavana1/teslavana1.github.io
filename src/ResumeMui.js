@@ -22,11 +22,11 @@ export default function Resume() {
                     <h3 className="title fw-normal">Software Engineer</h3> */}
                 </Grid>
 
-                <Grid container item direction='column' xs={12} lg={4} order={{ xs: 1, md: 2 }} py={2} px={{ xs: 2, md: 4, xl: 5 }} alignItems='flex-start' className="about">
+                <Grid container item direction='column' xs={12} sm={6} lg={4} order={{ xs: 1, lg: 2 }} py={2} px={{ xs: 2, md: 4, xl: 5 }} alignItems='flex-start' className="about">
                     <Contact />
                 </Grid>
 
-                <Grid container item direction='column' xs={12} lg={4} order={{ xs: 2, md: 1 }} py={2} px={{ xs: 2, md: 4, xl: 5 }} alignItems='flex-start' className="about">
+                <Grid container item direction='column' xs={12} sm={6} lg={4} order={{ xs: 2, lg: 1 }} py={2} px={{ xs: 2, md: 4, xl: 5 }} alignItems='flex-start' className="about">
                     <About />
                 </Grid>
 
@@ -34,7 +34,7 @@ export default function Resume() {
             <Grid container item direction='row' justifyContent={{ xs: 'center', sm: 'space-between', md: 'space-evenly' }} p={2} bgcolor='white'>
                 <Grid container item direction='column' xs={12} md={6} lg={4} py={2} px={{ xs: 2, md: 4, xl: 5 }} className="skills">
                     <Grid container item direction='row' className='row'>
-                        <Grid container item direction='column' pl={0} pr={{xs: 0, sm: 2, md: 0}} xs={12} sm={6} md={12}>
+                        <Grid container item direction='column' pl={0} pr={{xs: 0, sm: 2, md: 0}} xs={12} sm={6} md={12} pb={{ md: 2 }}>
                             <Skills />
                         </Grid>
                         <Grid container item direction='column' pr={0} pl={{xs: 0, sm: 2, md: 0}} xs={12} sm={6} md={12} display={{ xs: 'none', sm: 'inline-block', lg: 'none' }} py={{ md: 2 }}>

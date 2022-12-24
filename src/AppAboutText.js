@@ -3,7 +3,7 @@ import React from "react";
 
 export default function AppAboutText({ heading, text, color }) {
     return (
-        <Grid item container direction='column' xs={12} md={6} p={{ xs: 2, md: 4 }} justifyContent='center' position={{ md: 'absolute' }} height={{ md: 'calc(100vh - 56px)' }} mx={{xs: 2, md: 4}} zIndex={10}>
+        <Grid item container direction='column' xs={12} md={6} py={2} justifyContent='center' position={{ md: 'absolute' }} height={{ md: 'calc(100vh - 56px)' }} mx={{xs: 2, md: 6}} zIndex={10}>
             <Typography variant="h4" color={color} marginBottom={3}>
                 <b>{heading}</b>
             </Typography>

@@ -1,4 +1,10 @@
 import { blue, deepPurple, orange, red, teal, yellow } from "material-ui-colors"
+import profile from './ProfileTransparent.png'
+import messages from './MessagesTransparent.png'
+import listings from './ListingsTransparent.png'
+import details from './DetailsTransparent.png'
+import newForm from './NewTransparent.png'
+import edit from './EditTransparent.png'
 
 const teslaMartV2 = [{
     imageUrl: 'https://res.cloudinary.com/deuft4auk/image/upload/v1671405453/Personal%20Website/cray_arrange_s8krcq.png',
@@ -23,7 +29,7 @@ const teslaMartV2 = [{
 },
 
 {
-    imageUrl: 'https://res.cloudinary.com/deuft4auk/image/upload/v1671767303/Personal%20Website/ProfileTransparent_emaiyc.png',
+    imageUrl: profile,
     background: orange[100],
     color: orange[800],
     heading: 'Profile', 
@@ -37,7 +43,7 @@ const teslaMartV2 = [{
 },
 
 {
-    imageUrl: 'https://res.cloudinary.com/deuft4auk/image/upload/v1671761693/Personal%20Website/free_iphonex_mockup_q7isgr.png',
+    imageUrl: messages,
     background: blue[50],
     color: blue[700],
     heading: 'Messaging', 
@@ -56,7 +62,7 @@ const teslaMartV2 = [{
 
 
 {
-    imageUrl: 'https://res.cloudinary.com/deuft4auk/image/upload/v1671767302/Personal%20Website/ListingsTransparent_py0xus.png',
+    imageUrl: listings,
     background: red[50],
     color: red[800],
     heading: 'Listings', 
@@ -74,7 +80,7 @@ const teslaMartV2 = [{
 },
 
 {
-    imageUrl: 'https://res.cloudinary.com/deuft4auk/image/upload/v1671767302/Personal%20Website/NewTransparent_lhq8r2.png',
+    imageUrl: newForm,
     background: teal[50],
     color: teal[800],
     heading: "New Listing", 
@@ -92,7 +98,7 @@ const teslaMartV2 = [{
 },
 
 {
-    imageUrl: 'https://res.cloudinary.com/deuft4auk/image/upload/v1671767303/Personal%20Website/DetailsTransparent_pxsfe1.png',
+    imageUrl: details,
     background: yellow[100],
     color: yellow[900],
     heading: "Listing Details", 
@@ -110,7 +116,7 @@ const teslaMartV2 = [{
 },
 
 {
-    imageUrl: 'https://res.cloudinary.com/deuft4auk/image/upload/v1671767303/Personal%20Website/EditTransparent_a6zvp0.png',
+    imageUrl: edit,
     background: deepPurple[50],
     color: deepPurple[800],
     heading: "Edit Listing", 

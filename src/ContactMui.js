@@ -1,5 +1,5 @@
-import { Laptop, LinkedIn, LocalPhone, LocalPhoneTwoTone, Mail, MailTwoTone, Phone, PhoneTwoTone, WebTwoTone } from '@mui/icons-material'
-import { Button, Divider, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material'
+import { LinkedIn, MailTwoTone, PhoneTwoTone, WebTwoTone } from '@mui/icons-material'
+import { Divider, Grid, List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import { blue } from 'material-ui-colors'
 import React from 'react'
 
