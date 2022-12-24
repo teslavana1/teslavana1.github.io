@@ -2,11 +2,11 @@ import React from 'react'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 import './Resume.css'
-import Skills from './Skills';
-import Experience from './Experience';
-import Education from './Education';
-import About from './About';
-import Contact from './Contact';
+import Skills from './SkillsMui';
+import Experience from './ExperienceMui';
+import Education from './EducationMui';
+import About from './AboutMui';
+import Contact from './ContactMui';
 
 export default function Resume() {
     return (

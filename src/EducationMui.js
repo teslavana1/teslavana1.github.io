@@ -23,15 +23,15 @@ export default function Education() {
 ]
     return (
         <>
-<h2 className="text-primary">Education</h2>
-        <hr className="text-muted"></hr>
-        {education.map(item=>(
-            <div className="my-4 mt-md-0">
-            <h3 className="">{item.title}</h3>
-            <h4 className="subTitle">{item.details}</h4>
-            <h4 className="text-muted">{item.dates}</h4>
-        </div>
-        ))}
+            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600' }} color={blue[500]}>Education</Typography>
+            <Divider sx={{ mt: 1, mb: 2 }} />
+            {education.map(item => (
+            <Grid container item direction='column' mb='1.5rem'>
+                <Typography sx={{ fontSize: '1.4rem', fontWeight: '600' }}>{item.title}</Typography>
+                <Typography variant='subtitle1' sx={{ fontSize: '1rem', fontWeight: '400' }}>{item.details}</Typography>
+                <Typography color='#6c757d' sx={{ fontSize: '1rem', fontWeight: '200' }}>{item.dates}</Typography>
+            </Grid>
+            ))}
 
             {/* <div className="my-4 mt-md-0">
                 <h3 className="">Udemy</h3>

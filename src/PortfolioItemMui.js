@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import 'bootstrap'
 import { Button, Card, Grid, Typography } from '@mui/material'
 
 export default function PortfolioItem({ name, url, detailsUrl, image, description, setLoading }) {

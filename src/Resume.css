@@ -16,14 +16,17 @@ body::-webkit-scrollbar {
 h1 {
     font-size: 2.75rem;
 }
+
 h2 {
     font-size: 1.75rem;
     font-weight: 600;
 }
+
 h3 {
     font-size: 1.4rem;
     font-weight: 600
 }
+
 h4,p,li {
     font-size: 1rem;
     font-weight: 400;

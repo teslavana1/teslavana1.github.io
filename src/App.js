@@ -1,5 +1,5 @@
 import './App.css';
-import Resume from './Resume';
+import Resume from './ResumeMui';
 import Portfolio from './Portfolio';
 import Nav from './Nav';
 import { Route, Routes, Navigate } from 'react-router-dom';
@@ -9,7 +9,7 @@ import Footer from './Footer';
 
 
 function App() {
-  UseRedirectToHttps()
+  // UseRedirectToHttps()
   return (
     <div className="App">
       <Nav />
