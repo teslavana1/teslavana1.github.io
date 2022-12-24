@@ -23,7 +23,7 @@ export default function Education() {
 ]
     return (
         <>
-            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600' }} color={blue[500]}>Education</Typography>
+            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600' }} color={blue[600]}>Education</Typography>
             <Divider sx={{ mt: 1, mb: 2 }} />
             {education.map(item => (
             <Grid container item direction='column' mb='1.5rem'>

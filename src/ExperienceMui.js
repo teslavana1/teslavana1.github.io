@@ -6,7 +6,7 @@ export default function Experience() {
 
     return (
         <>
-            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600' }} color={blue[500]}>Experience</Typography>
+            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600' }} color={blue[600]}>Experience</Typography>
             <Divider sx={{ mt: 1, mb: 2 }} />
             <Grid container item mb='1.5rem' rowGap={2}>
                 <Grid container item direction='column' mb={0}>

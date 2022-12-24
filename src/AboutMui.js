@@ -5,7 +5,7 @@ import React from 'react'
 export default function About() {
     return (
         <>
-            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600' }} color={blue[500]}>About</Typography>
+            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600' }} color={blue[600]}>About</Typography>
             <Divider light sx={{ mt: 1, mb: 2 }} />
             <Typography variant='body1' marginBottom='1rem'>I’m a hopeful Software Engineer shifting over from over 8 years of Mechanical
                 Engineering experience. I've completed a 65+ hour web development bootcamp, where I learned

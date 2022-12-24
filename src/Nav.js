@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import 'bootstrap'
-import { Download } from 'react-bootstrap-icons'
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link, NavLink } from 'react-router-dom';
+import { Download } from '@mui/icons-material';
 
 class Nav extends Component {
     render() {
