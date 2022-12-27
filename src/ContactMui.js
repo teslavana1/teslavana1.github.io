@@ -1,13 +1,12 @@
 import { GitHub, LinkedIn, MailOutline, PhoneOutlined, WebOutlined } from '@mui/icons-material'
-import { Divider, Grid, List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material'
+import { Grid, List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import { blue } from 'material-ui-colors'
 import React from 'react'
 
 export default function Contact() {
     return (
         <>
-            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600' }} color={blue[600]}>Contact</Typography>
-            <Divider sx={{ mt: 1, mb: 2, bgcolor:'white' }} />
+            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600', mb:3 }} color={blue[600]}>Contact</Typography>
             <Grid container item direction='column' alignItems='flex-start' rowGap={2}>
                 <List disablePadding sx={{ height: '100%', width: '100%' }}>
                     <ListItemButton href='mailto: andrwmg@gmail.com' sx={{ height: '100%', width: '100%', color: blue[600], px: 0  }}>

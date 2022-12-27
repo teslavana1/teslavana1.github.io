@@ -1,5 +1,5 @@
-import { Divider, Grid, Typography } from '@mui/material'
-import { blue } from 'material-ui-colors'
+import { Grid, Typography } from '@mui/material'
+import { blue, grey } from 'material-ui-colors'
 import React from 'react'
 
 export default function Education() {
@@ -12,7 +12,7 @@ export default function Education() {
     details: 'The Web Developer Bootcamp 2022',
     dates: 'Jun 2022 - Aug 2022'
     },
-    {title: 'UCSD Extension', 
+    {title: 'UC San Diego', 
     details: 'Adobe Illustrator',
     dates: 'Oct 2016 - Dec 2016'
     },
@@ -23,13 +23,12 @@ export default function Education() {
 ]
     return (
         <>
-            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600' }} color={blue[600]}>Education</Typography>
-            <Divider sx={{ mt: 1, mb: 2 }} />
+            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600', mb:3 }} color={blue[600]}>Education</Typography>
             {education.map(item => (
             <Grid container item direction='column' mb='1.5rem'>
                 <Typography sx={{ fontSize: '1.4rem', fontWeight: '600' }}>{item.title}</Typography>
                 <Typography variant='subtitle1' sx={{ fontSize: '1rem', fontWeight: '400' }}>{item.details}</Typography>
-                <Typography color='#6c757d' sx={{ fontSize: '1rem', fontWeight: '200' }}>{item.dates}</Typography>
+                <Typography color={grey[900]} sx={{ fontSize: '1rem', fontWeight: '200' }}>{item.dates}</Typography>
             </Grid>
             ))}
 

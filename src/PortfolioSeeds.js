@@ -15,7 +15,7 @@ const websites = [
         name: 'Tesla Mart',
         url: 'https://teslamart.herokuapp.com',
         image: v1,
-        description: "Tesla Mart was build following my first web dev bootcamp.  Tesla Mart is a CRUD web app where current and future Tesla owners can buy and sell their vehicles.  The frontend was built using HTML, CSS, Bootstrap, and JavaScript, while the backend was built using NodeJS, Express, and MongoDB."
+        description: "Tesla Mart was built following my first web dev bootcamp.  Tesla Mart is a CRUD web app where current and future Tesla owners can buy and sell their vehicles.  The frontend was designed using HTML, CSS, Bootstrap, and JavaScript, while the backend was created using NodeJS, Express, and MongoDB."
     }
 ]
 

@@ -1,18 +1,17 @@
-import { Divider, Grid, Typography } from '@mui/material'
-import { blue } from 'material-ui-colors'
+import { Grid, Typography } from '@mui/material'
+import { blue, grey } from 'material-ui-colors'
 import React from 'react'
 
 export default function Experience() {
 
     return (
         <>
-            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600' }} color={blue[600]}>Experience</Typography>
-            <Divider sx={{ mt: 1, mb: 2 }} />
+            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600', mb:3 }} color={blue[600]}>Experience</Typography>
             <Grid container item mb='1.5rem' rowGap={2}>
                 <Grid container item direction='column' mb={0}>
                     <Typography sx={{ fontSize: '1.4rem', fontWeight: '600' }}>Inseego Corp.</Typography>
                     <Typography variant='subtitle1' sx={{ fontSize: '1rem', fontWeight: '400' }}>Senior Mechanical Engineer</Typography>
-                    <Typography color='#6c757d' sx={{ fontSize: '1rem', fontWeight: '200' }}>Aug 2020 - Oct 2022</Typography>
+                    <Typography color={grey[900]} sx={{ fontSize: '1rem', fontWeight: '200' }}>Aug 2020 - Oct 2022</Typography>
                 </Grid>
                 <Grid container item pl={2}>
                     <ul style={{ paddingInlineStart: 0, marginBottom: 0 }}>
@@ -29,7 +28,7 @@ export default function Experience() {
 
                     <Typography sx={{ fontSize: '1.4rem', fontWeight: '600' }}>HM Electronics</Typography>
                     <Typography variant='subtitle1' sx={{ fontSize: '1rem', fontWeight: '400' }}>Senior Mechanical Engineer</Typography>
-                    <Typography color='#6c757d' sx={{ fontSize: '1rem', fontWeight: '200' }}>Mar 2014 - Aug 2020</Typography>
+                    <Typography color={grey[900]} sx={{ fontSize: '1rem', fontWeight: '200' }}>Mar 2014 - Aug 2020</Typography>
                     </Grid>
                     <Grid container item pl={2}>
                         <ul style={{ paddingInlineStart: 0, marginBottom: 0 }}>

@@ -1,4 +1,4 @@
-import { Divider, Typography } from '@mui/material'
+import { Typography } from '@mui/material'
 import { blue } from 'material-ui-colors'
 import React from 'react'
 import Skill from './SkillMui'
@@ -6,9 +6,7 @@ import Skill from './SkillMui'
 export default function Skills () {
     return (
         <>
-        <Typography sx={{fontSize:'1.75rem'}} color={blue[600]}><b>Skills</b></Typography>
-        <Divider sx={{mt: 1, mb: 2}} />
-        {/* <hr className="text-muted"></hr> */}
+        <Typography sx={{fontSize:'1.75rem', mb:3}} color={blue[600]}><b>Skills</b></Typography>
         <Skill skill='HTML/CSS' progress='80' />
         <Skill skill='JavaScript' progress='60' />
         <Skill skill='React' progress='80' />
