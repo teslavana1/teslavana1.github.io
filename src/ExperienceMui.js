@@ -7,7 +7,7 @@ export default function Experience() {
     return (
         <>
             <Typography sx={{ fontSize: '1.75rem', fontWeight: '600', mb:3 }} color={blue[600]}>Experience</Typography>
-            <Grid container item mb='1.5rem' rowGap={2}>
+            <Grid container item mb='1.5rem'>
                 <Grid container item direction='column' mb={0}>
                     <Typography sx={{ fontSize: '1.4rem', fontWeight: '600' }}>Inseego Corp.</Typography>
                     <Typography variant='subtitle1' sx={{ fontSize: '1rem', fontWeight: '400' }}>Senior Mechanical Engineer</Typography>
@@ -23,7 +23,7 @@ export default function Experience() {
                     </ul>
                 </Grid>
             </Grid>
-            <Grid container item rowGap={2}>
+            <Grid container item>
                 <Grid container item direction='column' mb={0}>
 
                     <Typography sx={{ fontSize: '1.4rem', fontWeight: '600' }}>HM Electronics</Typography>
