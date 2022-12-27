@@ -1,4 +1,4 @@
-import { GitHub, LinkedIn, MailTwoTone, PhoneTwoTone, WebTwoTone } from '@mui/icons-material'
+import { GitHub, LinkedIn, MailOutline, PhoneOutlined, WebOutlined } from '@mui/icons-material'
 import { Divider, Grid, List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import { blue } from 'material-ui-colors'
 import React from 'react'
@@ -7,12 +7,12 @@ export default function Contact() {
     return (
         <>
             <Typography sx={{ fontSize: '1.75rem', fontWeight: '600' }} color={blue[600]}>Contact</Typography>
-            <Divider sx={{ mt: 1, mb: 2, color:'white' }} />
+            <Divider sx={{ mt: 1, mb: 2, bgcolor:'white' }} />
             <Grid container item direction='column' alignItems='flex-start' rowGap={2}>
-                <List sx={{ height: '100%', width: '100%' }}>
-                    <ListItemButton href='mailto: andrwmg@gmail.com' sx={{ height: '100%', width: '100%', color: blue[600], px: 0 }}>
+                <List disablePadding sx={{ height: '100%', width: '100%' }}>
+                    <ListItemButton href='mailto: andrwmg@gmail.com' sx={{ height: '100%', width: '100%', color: blue[600], px: 0  }}>
                         <ListItemIcon>
-                            <MailTwoTone sx={{ color: blue[600] }} />
+                            <MailOutline sx={{ color: blue[600] }} />
                         </ListItemIcon>
                         <ListItemText>
                             andrwmg@gmail.com
@@ -20,7 +20,7 @@ export default function Contact() {
                     </ListItemButton>
                     <ListItemButton href='tel:6108884468' sx={{ height: '100%', width: '100%', color: blue[600], px: 0 }}>
                         <ListItemIcon>
-                            <PhoneTwoTone sx={{ color: blue[600] }} />
+                            <PhoneOutlined sx={{ color: blue[600] }} />
                         </ListItemIcon>
                         <ListItemText>
                             610-888-4468
@@ -28,7 +28,7 @@ export default function Contact() {
                     </ListItemButton>
                     <ListItemButton href='https://www.andrewmichaelgay.com' sx={{ height: '100%', width: '100%', color: blue[600], px: 0 }}>
                         <ListItemIcon>
-                            <WebTwoTone sx={{ color: blue[600] }} />
+                            <WebOutlined sx={{ color: blue[600] }} />
                         </ListItemIcon>
                         <ListItemText>
                             andrewmichaelgay.com
