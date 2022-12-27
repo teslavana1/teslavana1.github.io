@@ -26,7 +26,7 @@ export default function Portfolio() {
                     <Typography color='primary'>Sorry, this web app needs a second to wake up!</Typography>
                 </Grid>
             </Grid>
-            <Grid container p={2} width='100%'>
+            <Grid container p={2} width='100vw'>
                 <Grid container item direction='row' justifyContent='center' py={2} px={{ xs: 1, md: 4, xl: 5 }}>
                     <Grid container item xs={12}>
                         {main}
