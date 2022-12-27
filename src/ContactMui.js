@@ -1,4 +1,4 @@
-import { LinkedIn, MailTwoTone, PhoneTwoTone, WebTwoTone } from '@mui/icons-material'
+import { GitHub, LinkedIn, MailTwoTone, PhoneTwoTone, WebTwoTone } from '@mui/icons-material'
 import { Divider, Grid, List, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import { blue } from 'material-ui-colors'
 import React from 'react'
@@ -42,6 +42,15 @@ export default function Contact() {
                             linkedin.com/in/andrwmg
                         </ListItemText>
                     </ListItemButton>
+                    <ListItemButton href='https://github.com/andrwmg' sx={{ height: '100%', width: '100%', color: blue[600], px: 0 }}>
+                        <ListItemIcon>
+                            <GitHub sx={{ color: blue[600] }} />
+                        </ListItemIcon>
+                        <ListItemText>
+                            github.com/andrwmg
+                        </ListItemText>
+                    </ListItemButton>
+
                 </List>
                 {/* <Button href="mailto: andrwmg@gmail.com" sx={{ color: blue[500] }} startIcon={<MailTwoTone />}>
                     andrwmg@gmail.com

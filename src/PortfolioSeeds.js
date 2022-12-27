@@ -7,14 +7,15 @@ const websites = [
         name: 'Tesla Mart V2',
         url: 'https://teslamartv2.herokuapp.com',
         detailsUrl: '/sw/portfolio/teslamartv2',
+        github: 'https://github.com/andrwmg/teslamart',
         image: v2,
-        description: "After completing my React bootcamp, I rebuilt Tesla Mart from scratch to solidify my new skills.  I used MUI to create a polished, responsive website. Storing data from API RESTful requests in the state and breaking the website down into components made the code easier to follow and organize.  New features includes: profile pictures, reordering of the listing images, messaging between users, and more!"
+        description: "I rebuilt Tesla Mart from scratch after completing my React bootcamp to use React, MUI and modular components to make the code easier to follow and the web app more polished.  New features include: profile pictures, reordering of listing images, messaging between users, and more!"
     },
     {
         name: 'Tesla Mart',
         url: 'https://teslamart.herokuapp.com',
         image: v1,
-        description: "Using the skills I learned from my first web development bootcamp, I built Tesla Mart.  Tesla Mart is a CRUD web app where current and future Tesla owners can buy and sell their vehicles.  The frontend was built using HTML, CSS, Bootstrap, and JavaScript, while the backend was built using NodeJS, Express, and MongoDB."
+        description: "Tesla Mart was build following my first web dev bootcamp.  Tesla Mart is a CRUD web app where current and future Tesla owners can buy and sell their vehicles.  The frontend was built using HTML, CSS, Bootstrap, and JavaScript, while the backend was built using NodeJS, Express, and MongoDB."
     }
 ]
 
