@@ -6,7 +6,6 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import UseRedirectToHttps from './hooks/useRedirectToHttps';
 import AppAbout from './AppAbout';
 import Footer from './Footer';
-import Navbar from './Navbar';
 
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Navbar />
       <Routes>
         <Route path='/' element={<Navigate replace to='/sw/resume' />} />
         <Route path='/sw/resume' element={<Resume />} />
