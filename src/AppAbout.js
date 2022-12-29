@@ -20,7 +20,7 @@ export default function AppAbout() {
     }, [])
 
     return (
-        <Grid container maxHeight={{ md: 'calc(100vh - 56px)' }} overflow='scroll'
+        <Grid container maxHeight={{ lg: 'calc(100vh - 56px)' }} overflow='scroll'
          ref={container}
          >
             {/* <Grid key={seeds[0].heading} container item direction='row' height={{ md: '100%' }} position='relative' justifyContent='flex-start' bgcolor={`${bgColors[0]}`}>
@@ -36,7 +36,7 @@ export default function AppAbout() {
                             <AppAboutText heading={seed.heading} text={seed.text} color={seed.color} />
                         </Grid>
                         :
-                        <Grid key={seed.heading} container item direction='row' flexWrap='wrap-reverse' height={{ md: '100%' }} position='relative' justifyContent='flex-end' bgcolor={seed.background}>
+                        <Grid key={seed.heading} container item direction='row' flexWrap='wrap-reverse' height={{ md: '100%' }} position='relative' justifyContent='flex-end' alignItems='center' bgcolor={seed.background}>
                             <AppAboutText heading={seed.heading} text={seed.text} color={seed.color}  />
                             <AppAboutImage imageUrl={seed.imageUrl} side='-25%' />
                         </Grid>
