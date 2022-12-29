@@ -1,5 +1,5 @@
-import v1 from './teslamart.herokuapp.com_listings.png'
-import v2 from './Cover.png'
+import v1 from './v1Cover.jpg'
+import v2 from './Cover.jpg'
 
 
 const websites = [
