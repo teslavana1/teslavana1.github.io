@@ -8,7 +8,7 @@ import Footer from './Footer';
 import DrawerAppBar from './Navbar';
 
 function App() {
-  // UseRedirectToHttps()
+  UseRedirectToHttps()
   return (
     <div className="App">
       <DrawerAppBar>
