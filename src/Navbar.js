@@ -33,10 +33,10 @@ function DrawerAppBar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
+            {/* <Typography variant="h6" sx={{ my: 2 }}>
                 Andrew Michael Gay
             </Typography>
-            <Divider />
+            <Divider /> */}
             <List>
                 {navItems.map((item) => (
                     <ListItem key={item.name} disablePadding>
@@ -79,7 +79,7 @@ function DrawerAppBar(props) {
                     <Typography
                         variant="h6"
                         component="div"
-                        sx={{ flexGrow: 0, paddingRight: 2, display: { xs: 'none', sm: 'block' }, whiteSpace: 'nowrap' }}
+                        sx={{ flexGrow: 0, paddingRight: 2, display: 'block', whiteSpace: 'nowrap' }}
                     >
                         Andrew Michael Gay
                     </Typography>
