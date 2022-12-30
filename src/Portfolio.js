@@ -4,6 +4,7 @@ import websites from './PortfolioSeeds'
 import { v4 as uuid } from 'uuid'
 import './Portfolio.css'
 import { CircularProgress, Grid, Typography } from '@mui/material'
+import Footer from './Footer'
 
 export default function Portfolio() {
     const [loading, setLoading] = useState(false)
@@ -33,6 +34,7 @@ export default function Portfolio() {
                     </Grid>
                 </Grid>
             </Grid>
+            <Footer />
         </>
     )
 }

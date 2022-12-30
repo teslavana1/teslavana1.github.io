@@ -4,11 +4,10 @@ import Portfolio from './Portfolio';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import UseRedirectToHttps from './hooks/useRedirectToHttps';
 import AppAbout from './AppAbout';
-import Footer from './Footer';
 import DrawerAppBar from './Navbar';
 
 function App() {
-  UseRedirectToHttps()
+  // UseRedirectToHttps()
   return (
     <div className="App">
       <DrawerAppBar>
@@ -19,7 +18,6 @@ function App() {
         <Route path='/sw/portfolio/teslamartv2' element={<AppAbout />} />
       </Routes>
       </DrawerAppBar>
-      {/* <Footer /> */}
     </div>
   );
 }

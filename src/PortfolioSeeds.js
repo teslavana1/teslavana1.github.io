@@ -1,5 +1,5 @@
-import v1 from './v1Cover.jpg'
-import v2 from './Cover.jpg'
+import v1 from './v1Cover-min.jpg'
+import v2 from './Cover-min.jpg'
 
 
 const websites = [

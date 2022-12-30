@@ -1,12 +1,13 @@
 import React from 'react'
 import './Resume.css'
-import cover from './canyon.jpg'
+import cover from './canyon-min.jpg'
 import Skills from './SkillsMui';
 import Experience from './ExperienceMui';
 import Education from './EducationMui';
 import About from './AboutMui';
 import Contact from './ContactMui';
 import { Grid, Typography } from '@mui/material';
+import Footer from './Footer';
 
 export default function Resume() {
     return (
@@ -50,6 +51,7 @@ export default function Resume() {
                     <Education />
                 </Grid>
             </Grid>
+            <Footer />
         </Grid>
     )
 }
