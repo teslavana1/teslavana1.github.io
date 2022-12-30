@@ -16,9 +16,7 @@ export default function PortfolioItem({ name, url, detailsUrl, github, image, de
                     </Button>
                 </Grid>
                 <Grid container item direction='column' xs={12} md={6} p={{ xs: 2, md: 3 }}>
-                    {/* <Grid container item direction='column' xs={12}> */}
                     <Typography variant='h5' width='100%' color='primary'>{name}</Typography>
-                    {/* </Grid> */}
                     <Grid container item direction='column' wrap={{ xs: 'wrap-reverse', xl: 'wrap' }}>
                         <Grid container item direction='row' xs={12} my={{ xs: 0, md: 2 }} order={{ xs: 3, md: 2 }}>
                             <Typography whiteSpace='break-spaces' variant={{ xs: 'body1', md: 'h6' }}>{description}</Typography>
@@ -27,12 +25,10 @@ export default function PortfolioItem({ name, url, detailsUrl, github, image, de
                         <Grid container item direction='row' xs={12} columnGap={1} my={{ xs: 2, md: 0 }} mt={{ xs: 2, md: 'auto' }} order={{ xs: 2, md: 3 }}>
                             <Grid container item direction='column' xs='auto' paddingLeft={0}>
                                 <Button href={url} variant='outlined' onClick={() => setLoading(true)}>Visit</Button>
-                                {/* <div className='btn btn-outline-primary justify-content-center align-items-center'>View WebApp</div> */}
                             </Grid>
                             {detailsUrl ?
                                 <Grid container item direction='column' xs='auto'>
                                     <Button href={detailsUrl} variant='outlined'>Details</Button>
-                                    {/* <div className='btn btn-outline-info justify-content-center align-items-center'>More Details</div> */}
                                 </Grid>
                                 :
                                 null
@@ -40,17 +36,12 @@ export default function PortfolioItem({ name, url, detailsUrl, github, image, de
                             {github ?
                                 <Grid container item direction='column' xs='auto'>
                                     <Button href={github} variant='outlined'>Github</Button>
-                                    {/* <div className='btn btn-outline-info justify-content-center align-items-center'>More Details</div> */}
                                 </Grid>
                                 :
                                 null
                             }
                         </Grid>
                     </Grid>
-                    {/* </Grid> */}
-
-                    {/* <div className='btn position-absolute bottom-0 right-0'>View Webapp
-                                    </div> */}
                 </Grid>
             </Grid>
         </Card>

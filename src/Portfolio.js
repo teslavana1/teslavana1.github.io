@@ -19,9 +19,6 @@ export default function Portfolio() {
         <>
             <Grid container display={loading ? 'flex' : 'none'} className='overlay'>
                 <Grid container item direction='row' xs={8} sm='auto' bgcolor='white' borderRadius={2} p={3} textAlign='center' columnGap={2} rowGap={2} justifyContent='center' alignItems='center'>
-                    {/* <div className="spinner-border text-primary me-3 text-center" role="status">
-                                <span className='visually-hidden'>Loading...</span>
-                            </div> */}
                     <CircularProgress />
 
                     <Typography color='primary'>Sorry, this web app needs a second to wake up!</Typography>

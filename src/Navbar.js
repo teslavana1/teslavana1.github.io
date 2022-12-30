@@ -32,10 +32,6 @@ function DrawerAppBar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'left' }}>
-            {/* <Typography variant="h6" sx={{ my: 2 }}>
-                Andrew Michael Gay
-            </Typography>
-            <Divider /> */}
             <List>
                 {navItems.map((item) => (
                     <ListItem key={item.name} disablePadding>
@@ -66,15 +62,7 @@ function DrawerAppBar(props) {
             <CssBaseline />
             <AppBar component="nav" sx={{backgroundColor: grey[900], zIndex: (theme) => theme.zIndex.drawer + 1 }} position='fixed'>
                 <Toolbar>
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                        edge='end'
-                        onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: 'none' } }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
+                    
                     <Typography
                         variant="h6"
                         component="div"
@@ -82,6 +70,15 @@ function DrawerAppBar(props) {
                     >
                         Andrew Michael Gay
                     </Typography>
+                    <IconButton
+                        color="inherit"
+                        aria-label="open drawer"
+                        edge='start'
+                        onClick={handleDrawerToggle}
+                        sx={{ ml:'auto', display: { sm: 'none' } }}
+                    >
+                        <MenuIcon />
+                    </IconButton>
                     <Box sx={{ display: { xs: 'none', sm: 'flex' }, width: '100%' }}>
                         <Button href='/sw/resume' key='Resume'>
                             <NavLink to='/sw/resume'>
@@ -93,7 +90,6 @@ function DrawerAppBar(props) {
                                 Portfolio
                             </NavLink>
                         </Button>
-                        {/* <ResumeButton /> */}
                         <Button href='https://drive.google.com/uc?export=download&id=1SAl3IETWPAUNfNY_v_2slQu_A56g1EF5' startIcon={<Download />} sx={{ color: '#fff', ml: 'auto' }}>
                             Resume
                         </Button>
@@ -106,6 +102,7 @@ function DrawerAppBar(props) {
                     container={container}
                     variant="temporary"
                     open={mobileOpen}
+                    anchor='right'
                     onClose={handleDrawerToggle}
                     ModalProps={{
                         keepMounted: true, // Better open performance on mobile.
