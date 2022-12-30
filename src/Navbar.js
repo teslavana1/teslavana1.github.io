@@ -83,12 +83,12 @@ function DrawerAppBar(props) {
                         Andrew Michael Gay
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'flex' }, width: '100%' }}>
-                        <Button key='Resume'>
+                        <Button href='/sw/resume' key='Resume'>
                             <NavLink to='/sw/resume'>
                                 Home
                             </NavLink>
                         </Button>
-                        <Button key='Portfolio'>
+                        <Button href='/sw/portfolio' key='Portfolio'>
                             <NavLink to='/sw/portfolio'>
                                 Portfolio
                             </NavLink>
