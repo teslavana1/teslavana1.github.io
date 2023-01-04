@@ -45,7 +45,7 @@ function DrawerAppBar(props) {
                 ))}
                 <ListItem key='download' disablePadding>
                         <ListItemButton href='https://drive.google.com/uc?export=download&id=1SAl3IETWPAUNfNY_v_2slQu_A56g1EF5' sx={{ textAlign: 'left' }}>
-                            <ListItemIcon>
+                            <ListItemIcon sx={{justifyContent: 'left'}}>
                                 <DownloadOutlined />
                             </ListItemIcon>
                             <ListItemText primary='Resume' />
