@@ -27,14 +27,14 @@ export default function AppAbout() {
                 return (
                     (index % 2 === 0) ?
 
-                        <Grid key={seed.heading} display={index === 0 && 'none'} container item direction='row' height={{xs: 'auto', md: '100%' }} position='relative' justifyContent='flex-start' bgcolor={seed.background}>
-                            <AppAboutImage imageUrl={seed.imageUrl} side='25%' />
+                        <Grid key={seed.heading} display={index === 0 && 'none'} container item direction='row' height={{xs: 'auto', md: '100%' }} position='relative' justifyContent='flex-start' bgcolor={seed.background} width='100vw'>
+                            <AppAboutImage imageUrl={seed.imageUrl} side='-25%' />
                             <AppAboutText heading={seed.heading} text={seed.text} color={seed.color} />
                         </Grid>
                         :
-                        <Grid key={seed.heading} container item direction='row' flexWrap='wrap-reverse' height={{xs: 'auto', md: '100%' }} position='relative' justifyContent='flex-end' alignItems='center' bgcolor={seed.background}>
+                        <Grid key={seed.heading} container item direction='row' flexWrap='wrap-reverse' height={{xs: 'auto', md: '100%' }} position='relative' justifyContent='flex-end' alignItems='center' bgcolor={seed.background} width='100vw'>
                             <AppAboutText heading={seed.heading} text={seed.text} color={seed.color}  />
-                            <AppAboutImage imageUrl={seed.imageUrl} side='-25%' />
+                            <AppAboutImage imageUrl={seed.imageUrl} side='25%' />
                         </Grid>
                 )
             })}

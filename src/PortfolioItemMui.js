@@ -6,7 +6,7 @@ export default function PortfolioItem({ name, url, detailsUrl, github, image, de
     const [hover, setHover] = useState(false)
 
     return (
-        <Card sx={{ marginBottom: 5 }}>
+        <Card elevation={2} sx={{ marginBottom: 5 }}>
             <Grid container direction='row' maxHeight={{ md: '450px' }}>
                 <Grid container item xs={12} md={6} height='100%' zIndex={1}>
                     <Button onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} sx={{ display: 'flex', justifyContent: 'flex-start', height: '100%', width: '100%', p: 0, borderRadius: 0, opacity: hover ? .9 : 1.0, transition: '.3s ease-in-out' }} href={url} onClick={() => setLoading(true)}>
