@@ -10,8 +10,8 @@ export default function PortfolioItem({ name, url, detailsUrl, github, image, de
             <Grid container direction='row' maxHeight={{ md: '450px' }}>
                 <Grid container item xs={12} md={6} height='100%' width='100%' zIndex={1}>
                     <Button onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} sx={{ display: 'flex', justifyContent: 'flex-start', height: '100%', width: '100%', p: 0, borderRadius: 0, opacity: hover ? .9 : 1.0, transition: '.3s ease-in-out' }} href={url} onClick={() => setLoading(true)}>
-                        <Grid container item direction='column' height='100%' width='100%' justifyContent='flex-start'>
-                        <img style={{ objectFit: 'cover', height: '100%', maxWidth: '100%', scale: hover ? '1.1' : '1.0', transition: '.3s ease-in-out' }} alt='' src={image && image} />
+                        <Grid container item direction='column'height='100%' width='100%' justifyContent='flex-start'>
+                        <img style={{ objectFit: 'cover', height: '100%', width: '100%', scale: hover ? '1.1' : '1.0', transition: '.3s ease-in-out' }} alt='' src={image && image} />
                         </Grid>
                     </Button>
                 </Grid>
