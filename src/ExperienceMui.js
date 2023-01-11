@@ -6,7 +6,7 @@ const items = [
     {
         company: 'Inseego Corp',
         title: 'Senior Mechanical Engineer',
-        info: 'August 2020 - October 2022,  San Diego, CA',
+        info: 'Aug 2020 - Oct 2022',
         details: [
             'Designed 5G wireless device plastic housings and electromechanical assemblies.',
             'Performed environmental and mechanical QA testing to validate production candidates.',
@@ -18,7 +18,7 @@ const items = [
     {
         company: 'HM Electronics Inc.',
         title: 'Senior Mechanical Engineer',
-        info: 'March 2014 - August 2020,  San Diego, CA',
+        info: 'Mar 2014 - Aug 2020',
         details: [
             'Served as Lead Mechanical Engineer on several design and sustaining projects simultaneously.',
             'Conducted cost reduction efforts to reduce BOM by 20% and streamline manufacturing.',
