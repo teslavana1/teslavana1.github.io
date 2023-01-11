@@ -20,17 +20,12 @@ export default function Portfolio() {
             <Grid container display={loading ? 'flex' : 'none'} className='overlay'>
                 <Grid container item direction='row' xs={8} sm='auto' bgcolor='white' borderRadius={2} p={3} textAlign='center' columnGap={2} rowGap={2} justifyContent='center' alignItems='center'>
                     <CircularProgress />
-
                     <Typography color='primary'>Sorry, this web app needs a second to wake up!</Typography>
                 </Grid>
             </Grid>
-            <Grid container p={2} width='100vw'>
-                <Grid container item direction='row' justifyContent='center' py={2} px={{ xs: 1, md: 4, xl: 5 }}>
-                    <Grid container item xs={12}>
+                <Grid container item direction='row' justifyContent='center' pt={4} pb={6} px={{ xs: 2, md: 4, xl: 5 }} width='100vw'>
                         {main}
                     </Grid>
-                </Grid>
-            </Grid>
             <Footer />
         </>
     )

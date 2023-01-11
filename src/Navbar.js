@@ -62,11 +62,11 @@ function DrawerAppBar(props) {
             <CssBaseline />
             <AppBar component="nav" sx={{backgroundColor: grey[900], zIndex: (theme) => theme.zIndex.drawer + 1 }} position='fixed'>
                 <Toolbar>
-                    
                     <Typography
                         variant="h6"
                         component="div"
                         sx={{ flexGrow: 0, paddingRight: 2, display: 'block', whiteSpace: 'nowrap' }}
+                        color='#fff'
                     >
                         Andrew Michael Gay
                     </Typography>
@@ -90,7 +90,7 @@ function DrawerAppBar(props) {
                                 Portfolio
                             </NavLink>
                         </Button>
-                        <Button href='https://drive.google.com/uc?export=download&id=1SAl3IETWPAUNfNY_v_2slQu_A56g1EF5' startIcon={<Download />} sx={{ color: '#fff', ml: 'auto' }}>
+                        <Button href='https://drive.google.com/uc?export=download&id=1SeYpa9XunwQ_nGADlYSYnS5mQc418c9y' startIcon={<Download />} sx={{ color: '#fff', ml: 'auto' }}>
                             Resume
                         </Button>
                     </Box>

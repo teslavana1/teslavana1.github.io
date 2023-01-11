@@ -9,7 +9,7 @@ export default function Contact() {
             <Typography sx={{ fontSize: '1.75rem', fontWeight: '600', mb:3 }} color={blue[600]}>Contact</Typography>
             <Grid container item direction='column' alignItems='flex-start' rowGap={2}>
                 <List disablePadding sx={{ height: '100%', width: '100%' }}>
-                    <ListItemButton href='mailto: andrwmg@gmail.com' sx={{ height: '100%', width: '100%', color: blue[600], px: 0  }}>
+                    <ListItemButton href='mailto: andrwmg@gmail.com' sx={{ width: '100%'  }}>
                         <ListItemIcon>
                             <MailOutline sx={{ color: blue[600] }} />
                         </ListItemIcon>
@@ -17,7 +17,7 @@ export default function Contact() {
                             andrwmg@gmail.com
                         </ListItemText>
                     </ListItemButton>
-                    <ListItemButton href='tel:6108884468' sx={{ height: '100%', width: '100%', color: blue[600], px: 0 }}>
+                    <ListItemButton href='tel:6108884468' sx={{ width: '100%' }}>
                         <ListItemIcon>
                             <PhoneOutlined sx={{ color: blue[600] }} />
                         </ListItemIcon>
@@ -25,7 +25,7 @@ export default function Contact() {
                             610-888-4468
                         </ListItemText>
                     </ListItemButton>
-                    <ListItemButton href='https://www.andrewmichaelgay.com' sx={{ height: '100%', width: '100%', color: blue[600], px: 0 }}>
+                    <ListItemButton href='https://www.andrewmichaelgay.com' sx={{ width: '100%' }}>
                         <ListItemIcon>
                             <WebOutlined sx={{ color: blue[600] }} />
                         </ListItemIcon>
@@ -33,7 +33,7 @@ export default function Contact() {
                             andrewmichaelgay.com
                         </ListItemText>
                     </ListItemButton>
-                    <ListItemButton href='https://www.linkedin.com/in/andrwmg' sx={{ height: '100%', width: '100%', color: blue[600], px: 0 }}>
+                    <ListItemButton href='https://www.linkedin.com/in/andrwmg' sx={{ width: '100%' }}>
                         <ListItemIcon>
                             <LinkedIn sx={{ color: blue[600] }} />
                         </ListItemIcon>
@@ -41,7 +41,7 @@ export default function Contact() {
                             linkedin.com/in/andrwmg
                         </ListItemText>
                     </ListItemButton>
-                    <ListItemButton href='https://github.com/andrwmg' sx={{ height: '100%', width: '100%', color: blue[600], px: 0 }}>
+                    <ListItemButton href='https://github.com/andrwmg' sx={{ width: '100%' }}>
                         <ListItemIcon>
                             <GitHub sx={{ color: blue[600] }} />
                         </ListItemIcon>

@@ -16,9 +16,9 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   },
 }));
 
-export default function Skill({skill, progress}) {
+export default function Skill({skill, progress, index}) {
     return(
-        <Grid container item direction='row' mb={2} justifyContent={{xs: 'start', sm: 'center', md: 'space-between'}}>
+        <Grid container item direction='row' mb={(index !== 8) && 2} justifyContent={{xs: 'start', sm: 'center', md: 'space-between'}}>
             <Grid container item direction='column' xs={6}>
                 <Typography variant='h7'>{skill}</Typography>
             </Grid>

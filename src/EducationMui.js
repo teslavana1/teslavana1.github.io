@@ -23,9 +23,9 @@ export default function Education() {
 ]
     return (
         <>
-            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600', mb:3 }} color={blue[600]}>Education</Typography>
-            {education.map(item => (
-            <Grid container item direction='column' mb='1.5rem'>
+            <Typography sx={{ fontSize: '1.75rem', fontWeight: '600', mb: 3 }} color={blue[600]}>Education</Typography>
+            {education.map((item, index) => (
+            <Grid container item direction='column' mb={index < 3 && '1.5rem'}>
                 <Typography sx={{ fontSize: '1.4rem', fontWeight: '600' }}>{item.title}</Typography>
                 <Typography variant='subtitle1' sx={{ fontSize: '1rem', fontWeight: '400' }}>{item.details}</Typography>
                 <Typography color={grey[900]} sx={{ fontSize: '1rem', fontWeight: '200' }}>{item.dates}</Typography>
