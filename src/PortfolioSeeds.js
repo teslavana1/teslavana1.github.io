@@ -1,5 +1,6 @@
 import v1 from './v1Cover-min.jpg'
 import v2 from './Cover-min.jpg'
+import rpg from './rpgImage.png'
 
 
 const websites = [
@@ -10,6 +11,13 @@ const websites = [
         github: 'https://github.com/andrwmg/teslamart',
         image: v2,
         description: "I rebuilt Tesla Mart from scratch after completing my second bootcamp to use React, MUI and modular components to make the code easier to follow and the web app more polished. New features include: profile pictures, reordering of listing images, messaging between users, and more!"
+    },
+    {
+        name: 'Simple Role-Playing Game',
+        url: 'https://basicrpgproject.herokuapp.com/',
+        github: 'https://github.com/andrwmg/simplerpggame',
+        image: rpg,
+        description: 'In order to build this simple role-playing game (RPG), I learned how to use the Tiled app to design a map and vanilla JavaScript to implement the mechanics. Use the A,W,S,D keys to "move" around the map and try not to get caught in the grassy patch (work in progress)!'
     },
     {
         name: 'Tesla Mart',

@@ -33,10 +33,10 @@ export default function Experience() {
 
     return (
         <>
-            <Typography fontSize='1.75rem' fontWeight='600' mb={3} color={blue[600]}>Experience</Typography>
+            <Typography fontSize='1.75rem' fontWeight={600} mb={3} color={blue[600]}>Experience</Typography>
             <Grid container item rowGap={2}>
                 {items.map((item, index) => (
-                <Grid container item direction='column'>
+                <Grid key={item.company} container item direction='column'>
                     <Typography fontSize='1.4rem' fontWeight={600}>
                         {item.company}
                     </Typography>
@@ -49,7 +49,7 @@ export default function Experience() {
                     <ul style={{paddingInlineStart: 16, marginBlockEnd: index === 1 && 0}}>
                         <Grid item container direction='column' rowGap={1.5}>
                             {item.details.map(detail => (
-                                <li type="circle">{detail}</li>
+                                <li key={detail} type="circle">{detail}</li>
                             ))}
                         </Grid>
 
