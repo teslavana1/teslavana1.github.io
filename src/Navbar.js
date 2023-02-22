@@ -13,22 +13,19 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { NavLink } from "react-router-dom";
 import {
   Download,
   DownloadOutlined,
-  FolderSharedOutlined,
-  HomeOutlined,
 } from "@mui/icons-material";
 import "./Navbar.css";
 import { grey } from "material-ui-colors";
 import { ListItemIcon } from "@mui/material";
 
 const drawerWidth = 240;
-const navItems = [
-  { name: "Home", url: "/sw/resume", icon: <HomeOutlined /> },
-  { name: "Portfolio", url: "/sw/portfolio", icon: <FolderSharedOutlined /> },
-];
+// const navItems = [
+//   { name: "Home", url: "/sw/resume", icon: <HomeOutlined /> },
+//   { name: "Portfolio", url: "/sw/portfolio", icon: <FolderSharedOutlined /> },
+// ];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -41,17 +38,17 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "left" }}>
       <List>
-        {navItems.map((item) => (
+        {/* {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
             <ListItemButton href={item.url} sx={{ textAlign: "left" }}>
               <ListItemIcon>{item.icon}</ListItemIcon>
               <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
-        ))}
+        ))} */}
         <ListItem key="download" disablePadding>
           <ListItemButton
-            href="https://drive.google.com/uc?export=download&id=1s38y5Lz6UtuFUUSC5hcSTVJXa4WKmwn-"
+            href="https://drive.google.com/uc?export=download&id=1fVPnrGQWM6bF-Pud_KdE1zCL6Wcgi-f2"
             sx={{ textAlign: "left" }}
           >
             <ListItemIcon sx={{ justifyContent: "left" }}>
@@ -102,12 +99,12 @@ function DrawerAppBar(props) {
             <MenuIcon />
           </IconButton>
           <Box sx={{ display: { xs: "none", sm: "flex" }, width: "100%" }}>
-            <Button href="/sw/resume" key="Resume">
+            {/* <Button href="/sw/resume" key="Resume">
               <NavLink to="/sw/resume">Home</NavLink>
             </Button>
             <Button href="/sw/portfolio" key="Portfolio">
               <NavLink to="/sw/portfolio">Portfolio</NavLink>
-            </Button>
+            </Button> */}
             <Button
               href="https://drive.google.com/uc?export=download&id=1s38y5Lz6UtuFUUSC5hcSTVJXa4WKmwn-"
               startIcon={<Download />}

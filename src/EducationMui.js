@@ -9,20 +9,20 @@ const EducationLink = styled(Link)( {
 })
 
 const education = [
-    {title: 'Udemy',
-    items: [
-        {details: 'UI/UX Product Design Bootcamp',
-        dates: 'Jan 2023 - Present'},
-        {details: 'React Native Bootcamp',
-        dates: 'Jan 2023 - Present'},
-        {details: 'React Bootcamp',
-        dates: 'Sep 2022 - Nov 2022',
-    link: 'https://www.udemy.com/certificate/UC-1f238874-5b9d-42f6-b3ea-c297fc173f6a/'},
-        {details: 'Full Stack Web Development Bootcamp',
-        dates: 'Jun 2022 - Aug 2022',
-    link: 'https://www.udemy.com/certificate/UC-ed7445e1-3715-4dfd-9f9d-ffcc1f16c431/'}
-    ]
-    },
+    // {title: 'Udemy',
+    // items: [
+    //     {details: 'UI/UX Product Design Bootcamp',
+    //     dates: 'Jan 2023 - Present'},
+    //     {details: 'React Native Bootcamp',
+    //     dates: 'Jan 2023 - Present'},
+    //     {details: 'React Bootcamp',
+    //     dates: 'Sep 2022 - Nov 2022',
+    // link: 'https://www.udemy.com/certificate/UC-1f238874-5b9d-42f6-b3ea-c297fc173f6a/'},
+    //     {details: 'Full Stack Web Development Bootcamp',
+    //     dates: 'Jun 2022 - Aug 2022',
+    // link: 'https://www.udemy.com/certificate/UC-ed7445e1-3715-4dfd-9f9d-ffcc1f16c431/'}
+    // ]
+    // },
     {title: 'UC San Diego',
     items:  
     [{details: 'Adobe Illustrator',

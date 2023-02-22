@@ -4,15 +4,15 @@ import React from 'react'
 import Skill from './SkillMui'
 
 const skills = [
-    {name: 'HTML/CSS', progress: 80 },
-    {name: 'JavaScript', progress: 70},
-    {name: 'React', progress: 80},
-    {name: 'Bootstrap', progress: 80},
-    {name: 'MUI', progress: 80},
-    {name: 'Node', progress: 60},
-    {name: 'MongoDB', progress: 60},
-    {name: 'Illustrator', progress: 80},
-    {name: 'Photoshop', progress: 60}
+    {name: 'Autodesk Inventor', progress: 90 },
+    {name: 'CREO/ProE', progress: 90},
+    {name: 'Solidworks', progress: 90},
+    {name: 'Adobe Illustrator', progress: 80},
+    {name: 'Autodesk AutoCAD', progress: 80},
+    {name: 'Adobe Photoshop', progress: 60},
+    // {name: 'MongoDB', progress: 60},
+    // {name: 'Illustrator', progress: 80},
+    // {name: 'Photoshop', progress: 60}
 ]
 
 export default function Skills () {

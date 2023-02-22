@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import cover from './canyon-min.jpg'
 import Skills from './SkillsMui';
 import Experience from './ExperienceMui';
@@ -7,20 +7,39 @@ import About from './AboutMui';
 import Contact from './ContactMui';
 import { Grid, Typography } from '@mui/material';
 import Footer from './Footer';
+import PortfolioCard2 from './PortfolioCard copy';
+import { blue } from 'material-ui-colors';
+import products from './MechanicalSeeds';
+import InfoDialog from './InfoDialog';
 
 export default function Resume() {
+
+    const [open, setOpen] = useState(false)
+
+    // const handleClickOpen = () => {
+    //     setOpen(true);
+    //   };
+
+      const handleClose = (evt) => {
+          evt.preventDefault()
+        setOpen(false);
+      };
+
     return (
         <>
-            <Grid container item direction='row' alignItems='flex-start' justifyContent='space-between' py={2} bgcolor='#f3f3f3'>
+            <Grid container item direction='row' alignItems='flex-start' justifyContent='space-between' py={2} bgcolor='#f3f3f3' maxWidth='100vw'>
+
+            <InfoDialog open={open} handleClose={handleClose} />
+
                 <Grid container item direction='column' xs={12} lg={4} order={1} py={2} px={{ xs: 2, sm: 2, md: 4, xl: 5 }} alignItems='flex-start'>
                     <Grid container item width='100%'>
-                        <img src={cover} style={{borderRadius: '.5rem', width: '100%', height: '320px', objectFit: 'cover'}} alt="" />
+                        <img src={cover} style={{ borderRadius: '.5rem', width: '100%', height: '320px', objectFit: 'cover' }} alt="" />
                     </Grid>
                     <Typography sx={{ fontSize: '2.75rem', fontWeight: 700 }}>
                         Andrew Gay
                     </Typography>
-                    <Typography sx={{ fontSize: '1.4rem' }}>
-                        Software Engineer
+                    <Typography sx={{ fontSize: '1.4rem', opacity: .7 }}>
+                        Senior Mechanical Engineer
                     </Typography>
                 </Grid>
 
@@ -31,9 +50,27 @@ export default function Resume() {
                 <Grid container item direction='column' xs={12} sm={6} lg={4} order={{ xs: 2, lg: 1 }} py={2} px={{ xs: 2, sm: 2, md: 4, xl: 5 }} alignItems='flex-start' className="about">
                     <About />
                 </Grid>
-
             </Grid>
-            <Grid container item direction='row' justifyContent={{ xs: 'center', sm: 'space-between', md: 'space-evenly' }} py={2} mb={4} bgcolor='white'>
+
+            <Grid item container direction='column' maxWidth='100vw' px={{ xs: 2, sm: 2, md: 4, xl: 5 }} py={4} zIndex={0}>
+                <Typography fontSize='1.75rem' fontWeight={600} mb={3} color={blue[600]}> Project Examples</Typography>
+                <Grid container item wrap='nowrap' columnGap={2} overflow='scroll'>
+                    {products.map(p => (
+                        <PortfolioCard2 key={p.title} wide={p.wide} src={p.src} company={p.company} title={p.title} body={p.body} bullets={p.bullets} productUrl={p.productUrl} />
+                    ))}
+                </Grid>
+            </Grid>
+
+            {/* <Grid item container direction='column' maxWidth='100vw' px={{ xs: 2, sm: 2, md: 4, xl: 5 }}>
+                <Typography fontSize='1.75rem' fontWeight={600} mb={3} color={blue[600]}>Software Portfolio</Typography>
+                <Grid container item direction='row' maxWidth='100vw' height='450px' wrap='nowrap' columnGap={2} overflow='scroll'>
+                    {websites.map(w => (
+                        <PortfolioCard3 key={w.title} wide={w.wide} src={w.src} company={w.company} title={w.title} body={w.body} bullets={w.bullets} productUrl={w.productUrl} view={w.view} details={w.details} github={w.github} />
+                    ))}
+                </Grid>
+            </Grid> */}
+
+            <Grid container item direction='row' justifyContent={{ xs: 'center', sm: 'space-between', md: 'space-evenly' }} py={2} mb={4} bgcolor='white' maxWidth='100vw'>
                 <Grid container item direction='column' xs={12} md={6} lg={4} py={2} px={{ xs: 2, sm: 2, md: 4, xl: 5 }} className="skills">
                     <Grid container item direction='row' className='row'>
                         <Grid container item direction='column' pl={0} pr={{ xs: 0, sm: 2, md: 0 }} xs={12} sm={6} md={12} pb={{ md: 2 }}>
