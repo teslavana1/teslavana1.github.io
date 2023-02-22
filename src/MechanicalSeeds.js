@@ -8,6 +8,7 @@ import v32ldright from './v32ldright.png'
 import fsiibpfront from './fsiibpfront.png'
 import mt701 from './mt701.png'
 import pic4744 from './pic4744.png'
+import nexeo from './nexeo.png'
 
 const products = [
 
@@ -173,6 +174,26 @@ const products = [
             'Adobe Illustrator'
         ],
         productUrl: 'https://www.clearcom.com/product/mt-701/'
+    },
+
+    {
+        wide: false,
+        src: [nexeo],
+        company: 'HM Electronics, Inc.',
+        title: 'Nexeo Base',
+        bullets: [
+            'Industrial design',
+            "PCA layout",
+            'Plastic housings',
+            'Cable routing',
+            'Part and assembly CAD',
+            'Custom touchscreen design',
+            'Design verification testing',
+            'Autodesk Inventor',
+            'Adobe Illustrator'
+        ],
+        body: 'The FreeSpeak II Splitter (FSII-SPL) is a device that connects multiple antennas to a main station. It is  As one of my first projects at HME, I designed the FSII-SPL from concept to production. This included creating the ID, plastic housings, PCB layout, labels, assembly instructions, and performing the QA testing.',
+        productUrl: 'https://www.hme.com/qsr/drive-thru-headsets-NEXEO/'
     }
 
 ]
