@@ -60,8 +60,16 @@ export default function Resume() {
                 <InfoDialog open={open} handleClose={handleClose} />
 
                 <Grid container item direction='column' xs={12} lg={4} order={1} py={2} px={{ xs: 2, sm: 2, md: 4, xl: 5 }} alignItems='flex-start'>
-                    <Grid container item width='100%'>
+                    <Grid container item width='100%' position='relative'>
                         <img src={cover} style={{ borderRadius: '.5rem', width: '100%', height: '320px', objectFit: 'cover' }} alt="" />
+                        {/* <Grid container item direction='column' color='white' p={2} position='absolute' bottom={0} left={0}>
+                            <Typography sx={{ fontSize: '2.75rem', fontWeight: 700 }}>
+                                Andrew Gay
+                            </Typography>
+                            <Typography sx={{ fontSize: '1.4rem', opacity: .7 }}>
+                                Senior Mechanical Engineer
+                            </Typography>
+                        </Grid> */}
                     </Grid>
                     <Typography sx={{ fontSize: '2.75rem', fontWeight: 700 }}>
                         Andrew Gay
@@ -83,16 +91,16 @@ export default function Resume() {
             <Grid item container direction='column' maxWidth='100vw' px={{ xs: 2, sm: 2, md: 4, xl: 5 }} py={4} zIndex={0}>
                 <Typography fontSize='1.75rem' fontWeight={600} mb={3} color={blue[600]}> Project Examples</Typography>
                 {/* {items.map(i => ( */}
-                    <Grid container item wrap='nowrap' columnGap={2} overflow='scroll'>
-                        {/* <ExperienceCard company={i.company} title={i.title} info={i.info} details={i.details} wide={true} /> */}
-                        {products.map(p => {
-                            return(
-                                // p.company === i.company &&
+                <Grid container item wrap='nowrap' columnGap={2} overflow='scroll'>
+                    {/* <ExperienceCard company={i.company} title={i.title} info={i.info} details={i.details} wide={true} /> */}
+                    {products.map(p => {
+                        return (
+                            // p.company === i.company &&
                             <PortfolioCard2 key={p.title} wide={p.wide} src={p.src} company={p.company} title={p.title} body={p.body} bullets={p.bullets} productUrl={p.productUrl} />
-                            )
-                        }
-                        )}
-                    </Grid>
+                        )
+                    }
+                    )}
+                </Grid>
                 {/* ))} */}
 
             </Grid>

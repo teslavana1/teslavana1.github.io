@@ -21,48 +21,7 @@ import "./Navbar.css";
 import { grey } from "material-ui-colors";
 import { ListItemIcon } from "@mui/material";
 
-const drawerWidth = 240;
-// const navItems = [
-//   { name: "Home", url: "/sw/resume", icon: <HomeOutlined /> },
-//   { name: "Portfolio", url: "/sw/portfolio", icon: <FolderSharedOutlined /> },
-// ];
-
-function DrawerAppBar(props) {
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
-
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "left" }}>
-      <List>
-        {/* {navItems.map((item) => (
-          <ListItem key={item.name} disablePadding>
-            <ListItemButton href={item.url} sx={{ textAlign: "left" }}>
-              <ListItemIcon>{item.icon}</ListItemIcon>
-              <ListItemText primary={item.name} />
-            </ListItemButton>
-          </ListItem>
-        ))} */}
-        <ListItem key="download" disablePadding>
-          <ListItemButton
-            href="https://drive.google.com/uc?export=download&id=1fVPnrGQWM6bF-Pud_KdE1zCL6Wcgi-f2"
-            sx={{ textAlign: "left" }}
-          >
-            <ListItemIcon sx={{ justifyContent: "left" }}>
-              <DownloadOutlined />
-            </ListItemIcon>
-            <ListItemText primary="Resume" />
-          </ListItemButton>
-        </ListItem>
-      </List>
-    </Box>
-  );
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
+function Navbar(props) {
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -89,22 +48,7 @@ function DrawerAppBar(props) {
           >
             Andrew Michael Gay
           </Typography>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ ml: "auto", display: { sm: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Box sx={{ display: { xs: "none", sm: "flex" }, width: "100%" }}>
-            {/* <Button href="/sw/resume" key="Resume">
-              <NavLink to="/sw/resume">Home</NavLink>
-            </Button>
-            <Button href="/sw/portfolio" key="Portfolio">
-              <NavLink to="/sw/portfolio">Portfolio</NavLink>
-            </Button> */}
+          <Box sx={{ display: "flex", width: "100%" }}>
             <Button
               href="https://drive.google.com/uc?export=download&id=1s38y5Lz6UtuFUUSC5hcSTVJXa4WKmwn-"
               startIcon={<Download />}
@@ -115,29 +59,6 @@ function DrawerAppBar(props) {
           </Box>
         </Toolbar>
       </AppBar>
-      <Box component="nav">
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          anchor="right"
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-              marginRight: 0,
-            },
-          }}
-        >
-          <Toolbar />
-          {drawer}
-        </Drawer>
-      </Box>
       <Box component="main" sx={{ p: 0 }}>
         <Toolbar />
         {props.children}
@@ -146,7 +67,7 @@ function DrawerAppBar(props) {
   );
 }
 
-DrawerAppBar.propTypes = {
+Navbar.propTypes = {
   /**
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
@@ -154,4 +75,4 @@ DrawerAppBar.propTypes = {
   window: PropTypes.func,
 };
 
-export default DrawerAppBar;
+export default Navbar;
