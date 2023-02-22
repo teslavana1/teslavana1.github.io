@@ -1,12 +1,15 @@
 import { Grid, Typography } from '@mui/material'
 import { blue, grey } from 'material-ui-colors'
 import React from 'react'
+import inseego from './inseego.png'
+import hme from './hme.png'
 
 const items = [
     {
         company: 'Inseego Corp',
         title: 'Senior Mechanical Engineer',
         info: 'Aug 2020 - Oct 2022',
+        logo: inseego,
         details: [
             'Designed 5G wireless device plastic housings and electromechanical assemblies.',
             'Performed environmental and mechanical QA testing to validate production candidates.',
@@ -19,6 +22,7 @@ const items = [
         company: 'HM Electronics Inc.',
         title: 'Senior Mechanical Engineer',
         info: 'Mar 2014 - Aug 2020',
+        logo: hme,
         details: [
             'Served as Lead Mechanical Engineer on several design and sustaining projects simultaneously.',
             'Conducted cost reduction efforts to reduce BOM by 20% and streamline manufacturing.',
@@ -37,9 +41,12 @@ export default function Experience() {
             <Grid container item rowGap={2}>
                 {items.map((item, index) => (
                 <Grid key={item.company} container item direction='column'>
+                    <Grid container item direction='row' columnGap={2}>
+                    {/* <img src={item.logo} alt='' height='34px'/> */}
                     <Typography fontSize='1.4rem' fontWeight={600}>
                         {item.company}
                     </Typography>
+                    </Grid>
                     <Typography variant='subtitle1' fontSize='1rem' fontWeight='400'>
                         {item.title}
                     </Typography>

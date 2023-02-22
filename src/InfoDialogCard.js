@@ -26,7 +26,7 @@ export default function InfoDialogCard({ heading, image, body, background, color
             <Grid container item direction='column' justifyContent='center' position='absolute' top={0} bottom={0} left={0} right={{xs: '100%', md: '50%'}} alignItems='center' height='100%' sx={{width: {xs: '100%', md: '55%'}}}>
                 <img src={image} alt="" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
             </Grid>
-            <Grid item container direction='column' justifyContent='flex-start' position={{xs: 'absolute'}} width={{xs: '100%', md: '50%'}} top={flip ? 0 : '91%'} bottom={0} left={{xs: 0, md: '50%'}} right={0} zIndex={1} py={2} pl={4} pr={{xs: 4, md: 1}} rowGap={2} color={color} overflow='scroll' wrap='nowrap' 
+            <Grid item container direction='column' justifyContent='flex-start' position={{xs: 'absolute'}} width={{xs: '100%', md: '50%'}} top={{xs: flip ? 0 : '91%', md: 0}} bottom={0} left={{xs: 0, md: '50%'}} right={0} zIndex={1} py={2} pl={4} pr={{xs: 4, md: 1}} rowGap={2} color={color} overflow='scroll' wrap='nowrap' 
             bgcolor={{xs: background, md: 'transparent'}}
             sx={{ opacity: {xs: flip ? 1 : 1, md: 1}, transition: 'all .3s ease-in-out' }}
             >

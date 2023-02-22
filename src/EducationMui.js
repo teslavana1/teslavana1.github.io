@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import { Grid, Link, Typography } from '@mui/material'
 import { blue, grey } from 'material-ui-colors'
 import React from 'react'
+import Certifications from './CertificationsMui'
 
 const EducationLink = styled(Link)( {
     textDecoration: 'none', 
@@ -61,7 +62,7 @@ export default function Education() {
                 
             </Grid>
             ))}
-            {/* </Grid> */}
+            <Certifications />
         </>
     )
 }

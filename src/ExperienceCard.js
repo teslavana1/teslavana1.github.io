@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
 import './PortfolioCard.css'
 
@@ -7,17 +7,17 @@ export default function ExperienceCard({  wide, company, title, info, details })
 
     const [hover, setHover] = useState(true)
 
-    const handleEnter = () => {
-        setHover(true)
-    }
+    // const handleEnter = () => {
+    //     setHover(true)
+    // }
 
-    const handleLeave = () => {
-        setHover(false)
-    }
+    // const handleLeave = () => {
+    //     setHover(false)
+    // }
 
-    const handleClick = () => {
-        setHover(!hover)
-    }
+    // const handleClick = () => {
+    //     setHover(!hover)
+    // }
 
     // const handleProductClick = (evt) => {
     //     evt.stopPropagation()
