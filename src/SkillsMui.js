@@ -4,12 +4,12 @@ import React from 'react'
 import Skill from './SkillMui'
 
 const skills = [
-    {name: 'Autodesk Inventor', progress: 90 },
-    {name: 'CREO/ProE', progress: 90},
-    {name: 'Solidworks', progress: 90},
-    {name: 'Adobe Illustrator', progress: 80},
-    {name: 'Autodesk AutoCAD', progress: 80},
-    {name: 'Adobe Photoshop', progress: 60},
+    {name: 'Inventor', progress: 90, years: '6.5 years' },
+    {name: 'CREO/ProE', progress: 90, years: '6.5 years'},
+    {name: 'Solidworks', progress: 90, years: '6.5 years'},
+    {name: 'Illustrator', progress: 80, years: '12 years'},
+    {name: 'AutoCAD', progress: 80, years: ' years'},
+    {name: 'Photoshop', progress: 60, years: '6.5 years'},
     // {name: 'MongoDB', progress: 60},
     // {name: 'Illustrator', progress: 80},
     // {name: 'Photoshop', progress: 60}

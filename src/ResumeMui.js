@@ -11,25 +11,53 @@ import PortfolioCard2 from './PortfolioCard copy';
 import { blue } from 'material-ui-colors';
 import products from './MechanicalSeeds';
 import InfoDialog from './InfoDialog';
+import ExperienceCard from './ExperienceCard';
 
 export default function Resume() {
 
     const [open, setOpen] = useState(false)
 
+    const items = [
+        {
+            company: 'Inseego Corp',
+            title: 'Senior Mechanical Engineer',
+            info: 'Aug 2020 - Oct 2022',
+            details: [
+                'Designed 5G wireless device plastic housings and electromechanical assemblies.',
+                'Performed environmental and mechanical QA testing to validate production candidates.',
+                'Optimized rework process for regulatory testing to increase output by 50%.',
+                'Led cross-functional collaboration to simplify designs while maintaining performance.',
+                'Managed OEM-designed product development.'
+            ]
+        },
+        {
+            company: 'HM Electronics Inc',
+            title: 'Senior Mechanical Engineer',
+            info: 'Mar 2014 - Aug 2020',
+            details: [
+                'Served as Lead Mechanical Engineer on several design and sustaining projects simultaneously.',
+                'Conducted cost reduction efforts to reduce BOM by 20% and streamline manufacturing.',
+                'Led sustaining efforts with root cause analysis and 50+ design improvements to legacy products.',
+                'Managed and trained interns with an 80% success rate retaining them as full-time engineers.',
+                'Developed product ID and QA test equipment.'
+            ]
+        }
+    ]
+
     // const handleClickOpen = () => {
     //     setOpen(true);
     //   };
 
-      const handleClose = (evt) => {
-          evt.preventDefault()
+    const handleClose = (evt) => {
+        evt.preventDefault()
         setOpen(false);
-      };
+    };
 
     return (
         <>
             <Grid container item direction='row' alignItems='flex-start' justifyContent='space-between' py={2} bgcolor='#f3f3f3' maxWidth='100vw'>
 
-            <InfoDialog open={open} handleClose={handleClose} />
+                <InfoDialog open={open} handleClose={handleClose} />
 
                 <Grid container item direction='column' xs={12} lg={4} order={1} py={2} px={{ xs: 2, sm: 2, md: 4, xl: 5 }} alignItems='flex-start'>
                     <Grid container item width='100%'>
@@ -54,11 +82,19 @@ export default function Resume() {
 
             <Grid item container direction='column' maxWidth='100vw' px={{ xs: 2, sm: 2, md: 4, xl: 5 }} py={4} zIndex={0}>
                 <Typography fontSize='1.75rem' fontWeight={600} mb={3} color={blue[600]}> Project Examples</Typography>
-                <Grid container item wrap='nowrap' columnGap={2} overflow='scroll'>
-                    {products.map(p => (
-                        <PortfolioCard2 key={p.title} wide={p.wide} src={p.src} company={p.company} title={p.title} body={p.body} bullets={p.bullets} productUrl={p.productUrl} />
-                    ))}
-                </Grid>
+                {/* {items.map(i => ( */}
+                    <Grid container item wrap='nowrap' columnGap={2} overflow='scroll'>
+                        {/* <ExperienceCard company={i.company} title={i.title} info={i.info} details={i.details} wide={true} /> */}
+                        {products.map(p => {
+                            return(
+                                // p.company === i.company &&
+                            <PortfolioCard2 key={p.title} wide={p.wide} src={p.src} company={p.company} title={p.title} body={p.body} bullets={p.bullets} productUrl={p.productUrl} />
+                            )
+                        }
+                        )}
+                    </Grid>
+                {/* ))} */}
+
             </Grid>
 
             {/* <Grid item container direction='column' maxWidth='100vw' px={{ xs: 2, sm: 2, md: 4, xl: 5 }}>

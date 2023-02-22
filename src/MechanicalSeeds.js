@@ -5,17 +5,18 @@ import splitterfront from './splitterfront2.png'
 import splitterback from './splitterback2.png'
 import fw2010 from './fw2010mount.png'
 import v32ldright from './v32ldright.png'
-import fsiibpfront from './fsiibpfront.png'
+import fsiibpfront from './fsiibp.png'
 import mt701 from './mt701.png'
 import pic4744 from './pic4744.png'
 import nexeo from './nexeo.png'
+import ac70 from './ac70.png'
 
 const products = [
 
     {
         wide: false,
         src: [splitterfront, splitterback],
-        company: 'HM Electronics, Inc.',
+        company: 'HM Electronics Inc',
         title: 'FreeSpeak II Splitter',
         bullets: [
             'Industrial design',
@@ -35,7 +36,7 @@ const products = [
     {
         wide: false,
         src: [fw2000],
-        company: 'Inseego Corp.',
+        company: 'Inseego Corp',
         title: 'FW2000',
         body: '',
         bullets: [
@@ -52,7 +53,7 @@ const products = [
     {
         wide: true,
         src: [arcadiafront, arcadiaback],
-        company: 'HM Electronics, Inc.',
+        company: 'HM Electronics Inc',
         title: 'Arcadia Main Station',
         body: '',
         bullets: [
@@ -73,7 +74,7 @@ const products = [
     {
         wide: false,
         src: [fw2010],
-        company: 'Inseego Corp.',
+        company: 'Inseego Corp',
         title: 'FW2010',
         body: '',
         bullets: [
@@ -108,7 +109,7 @@ const products = [
     {
         wide: false,
         src: [v32ldright],
-        company: 'HM Electronics, Inc.',
+        company: 'HM Electronics Inc',
         title: 'V32LD',
         body: '',
         bullets: [
@@ -127,7 +128,7 @@ const products = [
     {
         wide: false,
         src: [fsiibpfront],
-        company: 'HM Electronics, Inc.',
+        company: 'HM Electronics Inc',
         title: 'Hyperbaric Beltpack',
         body: '',
         bullets: [
@@ -145,7 +146,7 @@ const products = [
     {
         wide: true,
         src: [pic4744],
-        company: 'HM Electronics, Inc.',
+        company: 'HM Electronics Inc',
         title: 'PIC-4744',
         body: '',
         bullets: [
@@ -160,9 +161,9 @@ const products = [
     },
 
     {
-        wide: true,
+        wide: false,
         src: [mt701],
-        company: 'HM Electronics, Inc.',
+        company: 'HM Electronics Inc',
         title: 'MT-701',
         body: '',
         bullets: [
@@ -179,8 +180,8 @@ const products = [
     {
         wide: false,
         src: [nexeo],
-        company: 'HM Electronics, Inc.',
-        title: 'Nexeo Base',
+        company: 'HM Electronics Inc',
+        title: 'Nexeo BS7000',
         bullets: [
             'Industrial design',
             "PCA layout",
@@ -188,6 +189,24 @@ const products = [
             'Cable routing',
             'Part and assembly CAD',
             'Custom touchscreen design',
+            'Design verification testing',
+            'Autodesk Inventor',
+            'Adobe Illustrator'
+        ],
+        body: 'The FreeSpeak II Splitter (FSII-SPL) is a device that connects multiple antennas to a main station. It is  As one of my first projects at HME, I designed the FSII-SPL from concept to production. This included creating the ID, plastic housings, PCB layout, labels, assembly instructions, and performing the QA testing.',
+        productUrl: 'https://www.hme.com/qsr/drive-thru-headsets-NEXEO/'
+    },
+
+    {
+        wide: false,
+        src: [ac70],
+        company: 'HM Electronics Inc',
+        title: 'Nexeo AC70',
+        bullets: [
+            'Industrial design',
+            "PCA layout",
+            'Plastic housings',
+            'Part and assembly CAD',
             'Design verification testing',
             'Autodesk Inventor',
             'Adobe Illustrator'

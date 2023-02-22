@@ -13,6 +13,8 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   [`& .${linearProgressClasses.bar}`]: {
     borderRadius: 5,
     backgroundColor: '#1a90ff',
+    backgroundImage: 'linear-gradient(90deg, yellow, red)',
+    // backgroundImage: 'linear-gradient(90deg, red 10%, yellow 40%, yellow 60%, #1a90ff 90%)'
   },
 }));
 
@@ -24,6 +26,7 @@ export default function Skill({skill, progress, index}) {
             </Grid>
             <Grid container item direction='column' xs={6} my='auto'>
                 <BorderLinearProgress variant="determinate" value={progress} />
+                {/* <Typography alignSelf='flex-end' variant='h7' color='rgba(0, 0, 0, .6)'>6 years</Typography> */}
             </Grid>
         </Grid>
     )

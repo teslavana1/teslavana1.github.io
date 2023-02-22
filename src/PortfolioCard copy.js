@@ -25,7 +25,7 @@ export default function PortfolioCard({ src, wide, company, title, body, bullets
     // }
 
     return (
-        <Grid container height='400px' minWidth={{ xs: '85%', sm: '56%', md: wide ? '35%' : '35%', lg: '22%' }} borderRadius={2} position='relative' onMouseEnter={handleEnter} onMouseLeave={handleLeave} onClick={handleClick} overflow='hidden' bgcolor='white'>
+        <Grid container height='400px' minWidth={{ xs: '85%', sm: '56%', md: wide ? '35%' : '35%', lg: wide ? '22%' : '22%' }} borderRadius={2} position='relative' onMouseEnter={handleEnter} onMouseLeave={handleLeave} onClick={handleClick} overflow='hidden' bgcolor='white'>
             <Grid item position='absolute' top={0} bottom={0} left={0} right={0} sx={{
                 backgroundImage:
                     'linear-gradient(0deg, rgba(30, 136, 229,.75), rgba(30, 136, 229,.15))'
