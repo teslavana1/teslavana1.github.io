@@ -1,11 +1,11 @@
 import { Grid, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import './PortfolioCard.css'
 
 export default function ExperienceCard({  wide, company, title, info, details }) {
     
 
-    const [hover, setHover] = useState(true)
+    // const [hover, setHover] = useState(true)
 
     // const handleEnter = () => {
     //     setHover(true)
@@ -41,7 +41,7 @@ export default function ExperienceCard({  wide, company, title, info, details })
                 <Typography fontSize='16px' color='rgba(255, 255, 255, .9)'>
                     {info}
                 </Typography>
-                    <ul style={{ maxHeight: hover ? '300px' : 0, opacity: hover ? 1 : 0, transition: 'all .3s ease-in-out', margin: 0, marginBottom: hover ? '10px' : 0, paddingInlineStart: '15px' }}>
+                    <ul style={{ maxHeight: '300px', opacity: 1, transition: 'all .3s ease-in-out', margin: 0, marginBottom: '10px', paddingInlineStart: '15px' }}>
                         {details.map(d => (
                             <li key={d}>
                                 <Typography fontSize='14px'>
