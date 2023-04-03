@@ -22,7 +22,6 @@ export default function Cover() {
             alignItems='flex-end'
             justifyContent='center'
             pb={{xs: 0, sm: 4}}
-            sx={{backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0,.9))"}}
         >
             <Grid
                 container
@@ -32,8 +31,18 @@ export default function Cover() {
                 right={0}
                 top={0}
                 bottom={0}
+                zIndex={1}
+                sx={{backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0,0) 50%, rgba(0, 0, 0,.9))"}}
+            />
+            <Grid
+                container
+                item
+                position='absolute'
+                left={0}
+                right={0}
+                top={0}
+                bottom={0}
                 width='100%'
-                sx={{backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0,0), rgba(0, 0, 0,.9))"}}
             >
                 <img
                     src={cover}
@@ -61,7 +70,7 @@ export default function Cover() {
                 rowGap={1}
                 zIndex={1}
             >
-                <Typography variant='h1' fontWeight={700} noWrap color='white' fontFamily='Poppins'>
+                <Typography variant='h1' noWrap color='white'>
                     Andrew Gay
                 </Typography>
                 <Typography variant='h3' mb={1} color='white'>Mechanical Engineer</Typography>
