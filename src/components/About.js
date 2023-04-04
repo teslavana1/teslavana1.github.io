@@ -21,7 +21,7 @@ export default function About() {
           development experience to the next phase of my career.
         </Typography>
         <Typography variant="body1">
-          If you'd like to learn more about my background, <Link color="primary" href="https://drive.google.com/uc?export=download&id=1MX4ZWU4RNRpj3mL2C9uz_dYX0p7O8GvX" sx={{ textDecoration: 'none' }} >check out my resume!</Link>
+          If you'd like to learn more about my background, <Link color="primary" href="https://drive.google.com/uc?export=download&id=1Ma-I8uRJlIQbACOQr7QoCEX76hiGXsXX" sx={{ textDecoration: 'none' }} >check out my resume!</Link>
         </Typography>
       </Grid>
     </Grid>

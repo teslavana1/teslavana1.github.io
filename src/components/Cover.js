@@ -66,8 +66,6 @@ export default function Cover() {
                 sm={7}
                 md={5}
                 lg={3}
-                py={2}
-                rowGap={1}
                 zIndex={1}
             >
                 <Typography variant='h1' noWrap color='white'>

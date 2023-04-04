@@ -47,31 +47,7 @@ export default function Main() {
 
             <Projects />
 
-            <Grid
-                container
-                item
-                direction="row"
-                justifyContent={{
-                    xs: "center"
-                }}
-                rowGap={4}
-                bgcolor="white"
-                width='100%'
-                maxWidth="100vw"
-            >
-                <Grid
-                    container
-                    item
-                    direction="column"
-                    xs={12}
-                    md={8}
-                    rowGap={4}
-                    px={{ xs: 2, sm: 2, md: 4, xl: 5 }}
-                >
-
-                    <Skills />
-                </Grid>
-            </Grid>
+            <Skills />
             <Footer />
         </Grid>
     );
