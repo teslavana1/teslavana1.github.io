@@ -3,9 +3,9 @@ import { Button, Grid, Typography } from "@mui/material";
 import { Stack } from "@mui/system";
 import { blue, grey } from "material-ui-colors";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const CardButton = styled(Button)(({ theme }) => ({
-    color: theme.palette.getContrastText(grey[100]),
     backgroundColor: grey[100],
     color: grey[900],
     '&:hover': {
@@ -22,7 +22,9 @@ export default function Card({
     title,
     body,
     bullets,
-    productUrl
+    productUrl,
+    theme,
+    number
 }) {
 
     const [open, setOpen] = useState(false);
@@ -46,17 +48,19 @@ export default function Card({
     // }
 
     return (
+        // <motion.div initial={{opacity: 0, y: '100vh'}} animate={{opacity: 1, y: 0}} transition={{duration: .5, delay: number * .5}} style={{minWidth: '28%'}} >
         <Grid
             container
             item
             direction="column"
             height="400px"
-            minWidth={{
-                xs: "85%",
-                sm: "56%",
-                md: wide ? "35%" : "35%",
-                lg: wide ? "28%" : "28%",
-            }}
+            // minWidth={{
+            //     xs: "85%",
+            //     sm: "56%",
+            //     md: wide ? "35%" : "35%",
+            //     lg: wide ? "28%" : "28%",
+            // }}
+            minWidth='100%'
             borderRadius={2}
             position="relative"
             //   onMouseEnter={handleEnter}
@@ -79,8 +83,9 @@ export default function Card({
                 left={0}
                 right={0}
                 sx={{
-                    backgroundImage:
-                        "linear-gradient(0deg, rgba(0, 0, 0,.75), rgba(0, 0, 0,.15))",
+                    // transition: '.3s ease-in-out', 
+                    backgroundImage: theme === 'dark' ? "linear-gradient(0deg, rgba(0, 0, 0,.9), rgba(0, 0, 0, .55))" :
+                        "linear-gradient(0deg, rgba(0, 0, 0,.75), rgba(0, 0, 0,.15))", 
                 }}
             />
             <Grid
@@ -168,19 +173,19 @@ export default function Card({
                     zIndex={2}
                     wrap="nowrap"
                 >
-                    <CardButton href={productUrl} color="primary" variant="contained">
+                    <CardButton href={productUrl} sx={{ backgroundColor: grey[600], textTransform: 'initial'}}>
                         View
                     </CardButton>
                     <Button
                         onClick={handleClick}
                         variant="text"
-                        color="inherit"
-                        sx={{ display: { xs: "inline-block", md: "none", color: "white" } }}
+                        sx={{ color: 'white', display: { xs: "inline-block", md: "none" } }}
                     >
                         {open ? "Less Info" : "More Info"}
                     </Button>
                 </Grid>
             </Stack>
         </Grid>
+        // </motion.div>
     );
 }

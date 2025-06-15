@@ -13,8 +13,29 @@ import ac70 from '../images/ac70.png'
 import inseego from '../images/inseego.png'
 import hme from '../images/hme.png'
 import clearcom from '../images/clearcom.png'
+import metaquest3s from '../images/metaquest3s.png'
 
 const products = [
+    {
+        wide: false,
+        src: [metaquest3s],
+        company: 'Meta',
+        title: 'Meta Quest 3S',
+        body: '',
+        bullets: [
+            'DVT, PVT, MP build support',
+            'RDVT issue RCA',
+            'PRQ implementation',
+            'Tolerance analysis',
+            '3D-printed fixture design',
+            'Injection-molded plastic',
+            'BOM management',
+            'Part and assembly CAD',
+            'Asia-based supply chain',
+            'Siemens NX and TeamCenter'
+        ],
+        productUrl: 'https://www.meta.com/quest/quest-3s/?srsltid=AfmBOor6EM2i81CuuiFgRA6FkrovAjqYIXfp7KYhrI-IjfJprA4W0ZNU'
+    },
 
     {
         wide: true,
@@ -34,9 +55,29 @@ const products = [
             'Autodesk Inventor',
             'Adobe Illustrator'
         ],
-        productUrl: 'https://www.clearcom.com/product/arcadia-station/'
+        productUrl: 'https://www.clearcom.com/Product/category/central-station/arcadia-central-station?id=34498'
     },
-    
+
+    {
+        wide: false,
+        src: [nexeo],
+        company: 'HM Electronics Inc',
+        title: 'Nexeo BS7000',
+        bullets: [
+            'Industrial design',
+            "PCA layout",
+            'Plastic housings',
+            'Cable routing',
+            'Part and assembly CAD',
+            'Custom touchscreen design',
+            'Design verification testing',
+            'Autodesk Inventor',
+            'Adobe Illustrator'
+        ],
+        body: 'The FreeSpeak II Splitter (FSII-SPL) is a device that connects multiple antennas to a main station. It is  As one of my first projects at HME, I designed the FSII-SPL from concept to production. This included creating the ID, plastic housings, PCB layout, labels, assembly instructions, and performing the QA testing.',
+        productUrl: 'https://www.hme.com/qsr/drive-thru-headsets-NEXEO/'
+    },
+
     {
         wide: false,
         src: [splitterfront, splitterback],
@@ -54,7 +95,7 @@ const products = [
             'Adobe Illustrator'
         ],
         body: 'The FreeSpeak II Splitter (FSII-SPL) is a device that connects multiple antennas to a main station. It is  As one of my first projects at HME, I designed the FSII-SPL from concept to production. This included creating the ID, plastic housings, PCB layout, labels, assembly instructions, and performing the QA testing.',
-        productUrl: 'https://www.clearcom.com/product/fsii-spl/'
+        productUrl: 'https://www.clearcom.com/Product/category/transceivers-splitter/fsii-spl?id=1925'
     },
 
     {
@@ -125,7 +166,7 @@ const products = [
             'Autodesk Inventor',
             'Adobe Illustrator'
         ],
-        productUrl: 'https://www.clearcom.com/product/v32ld/'
+        productUrl: 'https://www.clearcom.com/Product/category/v-series-keypanels/v32ld-ltb?id=1994'
     },
 
     {
@@ -143,7 +184,7 @@ const products = [
             'Autodesk Inventor',
             'Adobe Illustrator'
         ],
-        productUrl: 'https://www.clearcom.com/product/fsii-bp24-o2/'
+        productUrl: 'https://www.clearcom.com/Product/category/beltpacks/fsii-bp24-o2-1?id=26315'
     },
     
     {
@@ -160,7 +201,7 @@ const products = [
             'Autodesk Inventor',
             'Adobe Illustrator'
         ],
-        productUrl: 'https://www.clearcom.com/product/pic-4744/'
+        productUrl: 'https://www.clearcom.com/Product/category/ifb-and-commentator/pic-4744?id=1587'
     },
 
     {
@@ -177,27 +218,7 @@ const products = [
             'Autodesk Inventor',
             'Adobe Illustrator'
         ],
-        productUrl: 'https://www.clearcom.com/product/mt-701/'
-    },
-
-    {
-        wide: false,
-        src: [nexeo],
-        company: 'HM Electronics Inc',
-        title: 'Nexeo BS7000',
-        bullets: [
-            'Industrial design',
-            "PCA layout",
-            'Plastic housings',
-            'Cable routing',
-            'Part and assembly CAD',
-            'Custom touchscreen design',
-            'Design verification testing',
-            'Autodesk Inventor',
-            'Adobe Illustrator'
-        ],
-        body: 'The FreeSpeak II Splitter (FSII-SPL) is a device that connects multiple antennas to a main station. It is  As one of my first projects at HME, I designed the FSII-SPL from concept to production. This included creating the ID, plastic housings, PCB layout, labels, assembly instructions, and performing the QA testing.',
-        productUrl: 'https://www.hme.com/qsr/drive-thru-headsets-NEXEO/'
+        productUrl: 'https://www.clearcom.com/Product/category/accessories/mt-701?id=1583'
     },
 
     {
@@ -229,7 +250,5 @@ for (let product of products) {
         product.logo = clearcom
     }
 }
-
-console.log(products)
 
 export default products
